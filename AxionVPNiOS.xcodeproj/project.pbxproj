@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE6658D81CDC55C600896906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658D71CDC55C600896906 /* main.m */; };
+		BE6658DB1CDC55C600896906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658DA1CDC55C600896906 /* AppDelegate.m */; };
+		BE6658E31CDC55C600896906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6658E21CDC55C600896906 /* Assets.xcassets */; };
+		BE6658E61CDC55C600896906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6658E41CDC55C600896906 /* LaunchScreen.storyboard */; };
+		BE6658F11CDC55C600896906 /* AxionVPNiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658F01CDC55C600896906 /* AxionVPNiOSTests.m */; };
+		BE6658FC1CDC55C600896906 /* AxionVPNiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658FB1CDC55C600896906 /* AxionVPNiOSUITests.m */; };
+		BE6659121CDC56D600896906 /* AXVUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659111CDC56D600896906 /* AXVUserManager.m */; };
+		BE6659151CDC56E500896906 /* AXVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659141CDC56E500896906 /* AXVDataSource.m */; };
+		BE6659241CDC585200896906 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659181CDC585200896906 /* AFHTTPSessionManager.m */; };
+		BE6659251CDC585200896906 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66591B1CDC585200896906 /* AFNetworkReachabilityManager.m */; };
+		BE6659261CDC585200896906 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66591D1CDC585200896906 /* AFSecurityPolicy.m */; };
+		BE6659271CDC585200896906 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66591F1CDC585200896906 /* AFURLRequestSerialization.m */; };
+		BE6659281CDC585200896906 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659211CDC585200896906 /* AFURLResponseSerialization.m */; };
+		BE6659291CDC585200896906 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659231CDC585200896906 /* AFURLSessionManager.m */; };
+		BE66592D1CDC593B00896906 /* AXVServerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66592B1CDC593B00896906 /* AXVServerListViewController.m */; };
+		BE66592E1CDC593B00896906 /* AXVServerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE66592C1CDC593B00896906 /* AXVServerListViewController.xib */; };
+		BE6659311CDC5AA800896906 /* AXVGeosite.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659301CDC5AA800896906 /* AXVGeosite.m */; };
+		BE6659341CDC5ADA00896906 /* AXVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659331CDC5ADA00896906 /* AXVObject.m */; };
+		BE66ACB91CEBFCC600940B67 /* AXVLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66ACB71CEBFCC600940B67 /* AXVLoadingViewController.m */; };
+		BE66ACBA1CEBFCC600940B67 /* AXVLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE66ACB81CEBFCC600940B67 /* AXVLoadingViewController.xib */; };
+		BE66ACBC1CEC0F7900940B67 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */; };
+		BE66ACBD1CEC11FA00940B67 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */; };
+		BE6A8C661CE2E6E300CFDD9A /* AXVLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6A8C641CE2E6E300CFDD9A /* AXVLogInViewController.m */; };
+		BE6A8C671CE2E6E300CFDD9A /* AXVLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A8C651CE2E6E300CFDD9A /* AXVLogInViewController.xib */; };
+		BE70DA3C1CE53D020036A324 /* UIViewController+AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */; };
+		BE70DA411CE540A80036A324 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70DA401CE540A80036A324 /* SafariServices.framework */; };
+		BE7445121CEA96EA00C12D4A /* AXVVPNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7445111CEA96EA00C12D4A /* AXVVPNConfiguration.m */; };
+		BE8096FF1CE4001100FF749A /* axionlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8096FE1CE4001100FF749A /* axionlogo.png */; };
+		BE8097091CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097021CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m */; };
+		BE80970A1CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097041CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m */; };
+		BE80970B1CE401CC00FF749A /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097061CE401CC00FF749A /* TPKeyboardAvoidingTableView.m */; };
+		BE80970C1CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097081CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		BE80970F1CE4071B00FF749A /* AppDelegateViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80970E1CE4071B00FF749A /* AppDelegateViewHelper.m */; };
+		BE8097131CE4098200FF749A /* STKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097121CE4098200FF749A /* STKeychain.m */; };
+		BEA4E18E1CE16A0A0059F01B /* AXVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA4E18D1CE16A0A0059F01B /* AXVUser.m */; };
+		BEFE699C1CE9761000A27814 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE699B1CE9761000A27814 /* PacketTunnelProvider.m */; };
+		BEFE69A11CE9761000A27814 /* AxionPacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE6658ED1CDC55C600896906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6658CB1CDC55C600896906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE6658D21CDC55C600896906;
+			remoteInfo = AxionVPNiOS;
+		};
+		BE6658F81CDC55C600896906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6658CB1CDC55C600896906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE6658D21CDC55C600896906;
+			remoteInfo = AxionVPNiOS;
+		};
+		BEFE699E1CE9761000A27814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6658CB1CDC55C600896906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFE69951CE9761000A27814;
+			remoteInfo = AxionPacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEFE69A01CE9761000A27814 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BEFE69A11CE9761000A27814 /* AxionPacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE6658D31CDC55C600896906 /* AxionVPNiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxionVPNiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6658D71CDC55C600896906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE6658D91CDC55C600896906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE6658DA1CDC55C600896906 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE6658E21CDC55C600896906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE6658E51CDC55C600896906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE6658E71CDC55C600896906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6658EC1CDC55C600896906 /* AxionVPNiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxionVPNiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6658F01CDC55C600896906 /* AxionVPNiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxionVPNiOSTests.m; sourceTree = "<group>"; };
+		BE6658F21CDC55C600896906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6658F71CDC55C600896906 /* AxionVPNiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxionVPNiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6658FB1CDC55C600896906 /* AxionVPNiOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxionVPNiOSUITests.m; sourceTree = "<group>"; };
+		BE6658FD1CDC55C600896906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6659101CDC56D600896906 /* AXVUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVUserManager.h; path = ../AxionVPNFramework/AXVUserManager.h; sourceTree = "<group>"; };
+		BE6659111CDC56D600896906 /* AXVUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVUserManager.m; path = ../AxionVPNFramework/AXVUserManager.m; sourceTree = "<group>"; };
+		BE6659131CDC56E500896906 /* AXVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVDataSource.h; path = ../AxionVPNFramework/AXVDataSource.h; sourceTree = "<group>"; };
+		BE6659141CDC56E500896906 /* AXVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVDataSource.m; path = ../AxionVPNFramework/AXVDataSource.m; sourceTree = "<group>"; };
+		BE6659171CDC585200896906 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BE6659181CDC585200896906 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		BE6659191CDC585200896906 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		BE66591A1CDC585200896906 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		BE66591B1CDC585200896906 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		BE66591C1CDC585200896906 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		BE66591D1CDC585200896906 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		BE66591E1CDC585200896906 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BE66591F1CDC585200896906 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		BE6659201CDC585200896906 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BE6659211CDC585200896906 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BE6659221CDC585200896906 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		BE6659231CDC585200896906 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		BE66592A1CDC593B00896906 /* AXVServerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVServerListViewController.h; sourceTree = "<group>"; };
+		BE66592B1CDC593B00896906 /* AXVServerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVServerListViewController.m; sourceTree = "<group>"; };
+		BE66592C1CDC593B00896906 /* AXVServerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVServerListViewController.xib; sourceTree = "<group>"; };
+		BE66592F1CDC5AA800896906 /* AXVGeosite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVGeosite.h; path = ../AxionVPNFramework/AXVGeosite.h; sourceTree = "<group>"; };
+		BE6659301CDC5AA800896906 /* AXVGeosite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVGeosite.m; path = ../AxionVPNFramework/AXVGeosite.m; sourceTree = "<group>"; };
+		BE6659321CDC5ADA00896906 /* AXVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVObject.h; path = ../AxionVPNFramework/AXVObject.h; sourceTree = "<group>"; };
+		BE6659331CDC5ADA00896906 /* AXVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVObject.m; path = ../AxionVPNFramework/AXVObject.m; sourceTree = "<group>"; };
+		BE66ACB61CEBFCC600940B67 /* AXVLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVLoadingViewController.h; sourceTree = "<group>"; };
+		BE66ACB71CEBFCC600940B67 /* AXVLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVLoadingViewController.m; sourceTree = "<group>"; };
+		BE66ACB81CEBFCC600940B67 /* AXVLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVLoadingViewController.xib; sourceTree = "<group>"; };
+		BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		BE66ACBE1CEC11FB00940B67 /* AxionVPNiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AxionVPNiOS.entitlements; sourceTree = "<group>"; };
+		BE6A8C631CE2E6E300CFDD9A /* AXVLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVLogInViewController.h; sourceTree = "<group>"; };
+		BE6A8C641CE2E6E300CFDD9A /* AXVLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVLogInViewController.m; sourceTree = "<group>"; };
+		BE6A8C651CE2E6E300CFDD9A /* AXVLogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVLogInViewController.xib; sourceTree = "<group>"; };
+		BE70DA3A1CE53D020036A324 /* UIViewController+AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertView.h"; sourceTree = "<group>"; };
+		BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertView.m"; sourceTree = "<group>"; };
+		BE70DA3D1CE53D9A0036A324 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BE70DA401CE540A80036A324 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		BE7445101CEA96EA00C12D4A /* AXVVPNConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVVPNConfiguration.h; path = ../AxionVPNFramework/AXVVPNConfiguration.h; sourceTree = "<group>"; };
+		BE7445111CEA96EA00C12D4A /* AXVVPNConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVVPNConfiguration.m; path = ../AxionVPNFramework/AXVVPNConfiguration.m; sourceTree = "<group>"; };
+		BE8096FE1CE4001100FF749A /* axionlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axionlogo.png; sourceTree = "<group>"; };
+		BE8097011CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		BE8097021CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		BE8097031CE401CC00FF749A /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		BE8097041CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		BE8097051CE401CC00FF749A /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		BE8097061CE401CC00FF749A /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		BE8097071CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		BE8097081CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		BE80970D1CE4071B00FF749A /* AppDelegateViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateViewHelper.h; sourceTree = "<group>"; };
+		BE80970E1CE4071B00FF749A /* AppDelegateViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateViewHelper.m; sourceTree = "<group>"; };
+		BE8097111CE4098200FF749A /* STKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKeychain.h; sourceTree = "<group>"; };
+		BE8097121CE4098200FF749A /* STKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKeychain.m; sourceTree = "<group>"; };
+		BEA4E18C1CE16A0A0059F01B /* AXVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVUser.h; path = ../AxionVPNFramework/AXVUser.h; sourceTree = "<group>"; };
+		BEA4E18D1CE16A0A0059F01B /* AXVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVUser.m; path = ../AxionVPNFramework/AXVUser.m; sourceTree = "<group>"; };
+		BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AxionPacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE69991CE9761000A27814 /* AxionPacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AxionPacketTunnel.entitlements; sourceTree = "<group>"; };
+		BEFE699A1CE9761000A27814 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		BEFE699B1CE9761000A27814 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		BEFE699D1CE9761000A27814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE6658D01CDC55C600896906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE70DA411CE540A80036A324 /* SafariServices.framework in Frameworks */,
+				BE66ACBD1CEC11FA00940B67 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6658E91CDC55C600896906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6658F41CDC55C600896906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE69931CE9761000A27814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE66ACBC1CEC0F7900940B67 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE6658CA1CDC55C600896906 = {
+			isa = PBXGroup;
+			children = (
+				BE6658D51CDC55C600896906 /* AxionVPNiOS */,
+				BE6658EF1CDC55C600896906 /* AxionVPNiOSTests */,
+				BE6658FA1CDC55C600896906 /* AxionVPNiOSUITests */,
+				BEFE69971CE9761000A27814 /* AxionPacketTunnel */,
+				BE6658D41CDC55C600896906 /* Products */,
+				BE66590A1CDC568600896906 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE6658D41CDC55C600896906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE6658D31CDC55C600896906 /* AxionVPNiOS.app */,
+				BE6658EC1CDC55C600896906 /* AxionVPNiOSTests.xctest */,
+				BE6658F71CDC55C600896906 /* AxionVPNiOSUITests.xctest */,
+				BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE6658D51CDC55C600896906 /* AxionVPNiOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE6659091CDC567A00896906 /* AppDelegate */,
+				BE70DA391CE53CEC0036A324 /* Categories */,
+				BE8096FD1CE3FFED00FF749A /* Images */,
+				BE6658D61CDC55C600896906 /* Supporting Files */,
+				BE66590E1CDC56A900896906 /* View Controllers */,
+			);
+			path = AxionVPNiOS;
+			sourceTree = "<group>";
+		};
+		BE6658D61CDC55C600896906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE66ACBE1CEC11FB00940B67 /* AxionVPNiOS.entitlements */,
+				BE6658E21CDC55C600896906 /* Assets.xcassets */,
+				BE6658E41CDC55C600896906 /* LaunchScreen.storyboard */,
+				BE6658E71CDC55C600896906 /* Info.plist */,
+				BE6658D71CDC55C600896906 /* main.m */,
+				BE70DA3D1CE53D9A0036A324 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE6658EF1CDC55C600896906 /* AxionVPNiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE6658F01CDC55C600896906 /* AxionVPNiOSTests.m */,
+				BE6658F21CDC55C600896906 /* Info.plist */,
+			);
+			path = AxionVPNiOSTests;
+			sourceTree = "<group>";
+		};
+		BE6658FA1CDC55C600896906 /* AxionVPNiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE6658FB1CDC55C600896906 /* AxionVPNiOSUITests.m */,
+				BE6658FD1CDC55C600896906 /* Info.plist */,
+			);
+			path = AxionVPNiOSUITests;
+			sourceTree = "<group>";
+		};
+		BE6659091CDC567A00896906 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BE6658D91CDC55C600896906 /* AppDelegate.h */,
+				BE6658DA1CDC55C600896906 /* AppDelegate.m */,
+				BE80970D1CE4071B00FF749A /* AppDelegateViewHelper.h */,
+				BE80970E1CE4071B00FF749A /* AppDelegateViewHelper.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BE66590A1CDC568600896906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE66590B1CDC568A00896906 /* Apple */,
+				BE66590D1CDC569300896906 /* AxionVPN */,
+				BE66590C1CDC568F00896906 /* ThirdParty */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE66590B1CDC568A00896906 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */,
+				BE70DA401CE540A80036A324 /* SafariServices.framework */,
+			);
+			name = Apple;
+			sourceTree = "<group>";
+		};
+		BE66590C1CDC568F00896906 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				BE8097101CE4098200FF749A /* STKeychain */,
+				BE8097001CE401CC00FF749A /* TPKeyboardAvoiding */,
+				BE6659161CDC585200896906 /* AFNetworking */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		BE66590D1CDC569300896906 /* AxionVPN */ = {
+			isa = PBXGroup;
+			children = (
+				BE66590F1CDC56B700896906 /* Service */,
+			);
+			name = AxionVPN;
+			sourceTree = "<group>";
+		};
+		BE66590E1CDC56A900896906 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE66ACB51CEBFCAE00940B67 /* Loading */,
+				BE6A8C621CE2E6CE00CFDD9A /* Login */,
+				BE6A8C611CE2E6CA00CFDD9A /* Server List */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BE66590F1CDC56B700896906 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BE6659131CDC56E500896906 /* AXVDataSource.h */,
+				BE6659141CDC56E500896906 /* AXVDataSource.m */,
+				BE66592F1CDC5AA800896906 /* AXVGeosite.h */,
+				BE6659301CDC5AA800896906 /* AXVGeosite.m */,
+				BE6659321CDC5ADA00896906 /* AXVObject.h */,
+				BE6659331CDC5ADA00896906 /* AXVObject.m */,
+				BE6659101CDC56D600896906 /* AXVUserManager.h */,
+				BE6659111CDC56D600896906 /* AXVUserManager.m */,
+				BEA4E18C1CE16A0A0059F01B /* AXVUser.h */,
+				BEA4E18D1CE16A0A0059F01B /* AXVUser.m */,
+				BE7445101CEA96EA00C12D4A /* AXVVPNConfiguration.h */,
+				BE7445111CEA96EA00C12D4A /* AXVVPNConfiguration.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		BE6659161CDC585200896906 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BE6659171CDC585200896906 /* AFHTTPSessionManager.h */,
+				BE6659181CDC585200896906 /* AFHTTPSessionManager.m */,
+				BE6659191CDC585200896906 /* AFNetworking.h */,
+				BE66591A1CDC585200896906 /* AFNetworkReachabilityManager.h */,
+				BE66591B1CDC585200896906 /* AFNetworkReachabilityManager.m */,
+				BE66591C1CDC585200896906 /* AFSecurityPolicy.h */,
+				BE66591D1CDC585200896906 /* AFSecurityPolicy.m */,
+				BE66591E1CDC585200896906 /* AFURLRequestSerialization.h */,
+				BE66591F1CDC585200896906 /* AFURLRequestSerialization.m */,
+				BE6659201CDC585200896906 /* AFURLResponseSerialization.h */,
+				BE6659211CDC585200896906 /* AFURLResponseSerialization.m */,
+				BE6659221CDC585200896906 /* AFURLSessionManager.h */,
+				BE6659231CDC585200896906 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = "../AxionVPNFramework/Third Party/AFNetworking";
+			sourceTree = "<group>";
+		};
+		BE66ACB51CEBFCAE00940B67 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				BE66ACB61CEBFCC600940B67 /* AXVLoadingViewController.h */,
+				BE66ACB71CEBFCC600940B67 /* AXVLoadingViewController.m */,
+				BE66ACB81CEBFCC600940B67 /* AXVLoadingViewController.xib */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		BE6A8C611CE2E6CA00CFDD9A /* Server List */ = {
+			isa = PBXGroup;
+			children = (
+				BE66592A1CDC593B00896906 /* AXVServerListViewController.h */,
+				BE66592B1CDC593B00896906 /* AXVServerListViewController.m */,
+				BE66592C1CDC593B00896906 /* AXVServerListViewController.xib */,
+			);
+			name = "Server List";
+			sourceTree = "<group>";
+		};
+		BE6A8C621CE2E6CE00CFDD9A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A8C631CE2E6E300CFDD9A /* AXVLogInViewController.h */,
+				BE6A8C641CE2E6E300CFDD9A /* AXVLogInViewController.m */,
+				BE6A8C651CE2E6E300CFDD9A /* AXVLogInViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		BE70DA391CE53CEC0036A324 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BE70DA3A1CE53D020036A324 /* UIViewController+AlertView.h */,
+				BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BE8096FD1CE3FFED00FF749A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BE8096FE1CE4001100FF749A /* axionlogo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BE8097001CE401CC00FF749A /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				BE8097011CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.h */,
+				BE8097021CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m */,
+				BE8097031CE401CC00FF749A /* TPKeyboardAvoidingScrollView.h */,
+				BE8097041CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m */,
+				BE8097051CE401CC00FF749A /* TPKeyboardAvoidingTableView.h */,
+				BE8097061CE401CC00FF749A /* TPKeyboardAvoidingTableView.m */,
+				BE8097071CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				BE8097081CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKeyboardAvoiding;
+			path = "../AxionVPNFramework/Third Party/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		BE8097101CE4098200FF749A /* STKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				BE8097111CE4098200FF749A /* STKeychain.h */,
+				BE8097121CE4098200FF749A /* STKeychain.m */,
+			);
+			name = STKeychain;
+			path = "../AxionVPNFramework/Third Party/STKeychain";
+			sourceTree = "<group>";
+		};
+		BEFE69971CE9761000A27814 /* AxionPacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE699A1CE9761000A27814 /* PacketTunnelProvider.h */,
+				BEFE699B1CE9761000A27814 /* PacketTunnelProvider.m */,
+				BEFE699D1CE9761000A27814 /* Info.plist */,
+				BEFE69981CE9761000A27814 /* Supporting Files */,
+			);
+			path = AxionPacketTunnel;
+			sourceTree = "<group>";
+		};
+		BEFE69981CE9761000A27814 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE69991CE9761000A27814 /* AxionPacketTunnel.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE6658D21CDC55C600896906 /* AxionVPNiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6659001CDC55C600896906 /* Build configuration list for PBXNativeTarget "AxionVPNiOS" */;
+			buildPhases = (
+				BE6658CF1CDC55C600896906 /* Sources */,
+				BE6658D01CDC55C600896906 /* Frameworks */,
+				BE6658D11CDC55C600896906 /* Resources */,
+				BEFE69A01CE9761000A27814 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFE699F1CE9761000A27814 /* PBXTargetDependency */,
+			);
+			name = AxionVPNiOS;
+			productName = AxionVPNiOS;
+			productReference = BE6658D31CDC55C600896906 /* AxionVPNiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE6658EB1CDC55C600896906 /* AxionVPNiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6659031CDC55C600896906 /* Build configuration list for PBXNativeTarget "AxionVPNiOSTests" */;
+			buildPhases = (
+				BE6658E81CDC55C600896906 /* Sources */,
+				BE6658E91CDC55C600896906 /* Frameworks */,
+				BE6658EA1CDC55C600896906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6658EE1CDC55C600896906 /* PBXTargetDependency */,
+			);
+			name = AxionVPNiOSTests;
+			productName = AxionVPNiOSTests;
+			productReference = BE6658EC1CDC55C600896906 /* AxionVPNiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE6658F61CDC55C600896906 /* AxionVPNiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6659061CDC55C600896906 /* Build configuration list for PBXNativeTarget "AxionVPNiOSUITests" */;
+			buildPhases = (
+				BE6658F31CDC55C600896906 /* Sources */,
+				BE6658F41CDC55C600896906 /* Frameworks */,
+				BE6658F51CDC55C600896906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6658F91CDC55C600896906 /* PBXTargetDependency */,
+			);
+			name = AxionVPNiOSUITests;
+			productName = AxionVPNiOSUITests;
+			productReference = BE6658F71CDC55C600896906 /* AxionVPNiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BEFE69951CE9761000A27814 /* AxionPacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFE69A41CE9761000A27814 /* Build configuration list for PBXNativeTarget "AxionPacketTunnel" */;
+			buildPhases = (
+				BEFE69921CE9761000A27814 /* Sources */,
+				BEFE69931CE9761000A27814 /* Frameworks */,
+				BEFE69941CE9761000A27814 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AxionPacketTunnel;
+			productName = AxionPacketTunnel;
+			productReference = BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE6658CB1CDC55C600896906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AxionVPN;
+				TargetAttributes = {
+					BE6658D21CDC55C600896906 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3P4L4LZ5DK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					BE6658EB1CDC55C600896906 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BE6658D21CDC55C600896906;
+					};
+					BE6658F61CDC55C600896906 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BE6658D21CDC55C600896906;
+					};
+					BEFE69951CE9761000A27814 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3P4L4LZ5DK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BE6658CE1CDC55C600896906 /* Build configuration list for PBXProject "AxionVPNiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE6658CA1CDC55C600896906;
+			productRefGroup = BE6658D41CDC55C600896906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE6658D21CDC55C600896906 /* AxionVPNiOS */,
+				BE6658EB1CDC55C600896906 /* AxionVPNiOSTests */,
+				BE6658F61CDC55C600896906 /* AxionVPNiOSUITests */,
+				BEFE69951CE9761000A27814 /* AxionPacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE6658D11CDC55C600896906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6658E61CDC55C600896906 /* LaunchScreen.storyboard in Resources */,
+				BE66ACBA1CEBFCC600940B67 /* AXVLoadingViewController.xib in Resources */,
+				BE66592E1CDC593B00896906 /* AXVServerListViewController.xib in Resources */,
+				BE8096FF1CE4001100FF749A /* axionlogo.png in Resources */,
+				BE6A8C671CE2E6E300CFDD9A /* AXVLogInViewController.xib in Resources */,
+				BE6658E31CDC55C600896906 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6658EA1CDC55C600896906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6658F51CDC55C600896906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE69941CE9761000A27814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE6658CF1CDC55C600896906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE66592D1CDC593B00896906 /* AXVServerListViewController.m in Sources */,
+				BE6A8C661CE2E6E300CFDD9A /* AXVLogInViewController.m in Sources */,
+				BE8097091CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				BE80970B1CE401CC00FF749A /* TPKeyboardAvoidingTableView.m in Sources */,
+				BE6659261CDC585200896906 /* AFSecurityPolicy.m in Sources */,
+				BE6659281CDC585200896906 /* AFURLResponseSerialization.m in Sources */,
+				BE6659341CDC5ADA00896906 /* AXVObject.m in Sources */,
+				BE6659151CDC56E500896906 /* AXVDataSource.m in Sources */,
+				BE80970C1CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				BE6658DB1CDC55C600896906 /* AppDelegate.m in Sources */,
+				BE7445121CEA96EA00C12D4A /* AXVVPNConfiguration.m in Sources */,
+				BE6659241CDC585200896906 /* AFHTTPSessionManager.m in Sources */,
+				BE6659311CDC5AA800896906 /* AXVGeosite.m in Sources */,
+				BE6659291CDC585200896906 /* AFURLSessionManager.m in Sources */,
+				BE80970F1CE4071B00FF749A /* AppDelegateViewHelper.m in Sources */,
+				BE6658D81CDC55C600896906 /* main.m in Sources */,
+				BEA4E18E1CE16A0A0059F01B /* AXVUser.m in Sources */,
+				BE66ACB91CEBFCC600940B67 /* AXVLoadingViewController.m in Sources */,
+				BE80970A1CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m in Sources */,
+				BE6659251CDC585200896906 /* AFNetworkReachabilityManager.m in Sources */,
+				BE6659121CDC56D600896906 /* AXVUserManager.m in Sources */,
+				BE6659271CDC585200896906 /* AFURLRequestSerialization.m in Sources */,
+				BE70DA3C1CE53D020036A324 /* UIViewController+AlertView.m in Sources */,
+				BE8097131CE4098200FF749A /* STKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6658E81CDC55C600896906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6658F11CDC55C600896906 /* AxionVPNiOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6658F31CDC55C600896906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6658FC1CDC55C600896906 /* AxionVPNiOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE69921CE9761000A27814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE699C1CE9761000A27814 /* PacketTunnelProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE6658EE1CDC55C600896906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE6658D21CDC55C600896906 /* AxionVPNiOS */;
+			targetProxy = BE6658ED1CDC55C600896906 /* PBXContainerItemProxy */;
+		};
+		BE6658F91CDC55C600896906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE6658D21CDC55C600896906 /* AxionVPNiOS */;
+			targetProxy = BE6658F81CDC55C600896906 /* PBXContainerItemProxy */;
+		};
+		BEFE699F1CE9761000A27814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFE69951CE9761000A27814 /* AxionPacketTunnel */;
+			targetProxy = BEFE699E1CE9761000A27814 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE6658E41CDC55C600896906 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE6658E51CDC55C600896906 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE6658FE1CDC55C600896906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Margret Kroeze (4W3MNEDGR4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Margret Kroeze (4W3MNEDGR4)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE6658FF1CDC55C600896906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Margret Kroeze (4W3MNEDGR4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Margret Kroeze (4W3MNEDGR4)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE6659011CDC55C600896906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
+				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+			};
+			name = Debug;
+		};
+		BE6659021CDC55C600896906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
+				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+			};
+			name = Release;
+		};
+		BE6659041CDC55C600896906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AxionVPNiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxionVPNiOS.app/AxionVPNiOS";
+			};
+			name = Debug;
+		};
+		BE6659051CDC55C600896906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AxionVPNiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxionVPNiOS.app/AxionVPNiOS";
+			};
+			name = Release;
+		};
+		BE6659071CDC55C600896906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AxionVPNiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AxionVPNiOS;
+			};
+			name = Debug;
+		};
+		BE6659081CDC55C600896906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AxionVPNiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AxionVPNiOS;
+			};
+			name = Release;
+		};
+		BEFE69A21CE9761000A27814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AxionPacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS.PT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "740ed46e-4e6f-446b-ba0a-c1a2965f25a6";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BEFE69A31CE9761000A27814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AxionPacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS.PT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "740ed46e-4e6f-446b-ba0a-c1a2965f25a6";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE6658CE1CDC55C600896906 /* Build configuration list for PBXProject "AxionVPNiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6658FE1CDC55C600896906 /* Debug */,
+				BE6658FF1CDC55C600896906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6659001CDC55C600896906 /* Build configuration list for PBXNativeTarget "AxionVPNiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6659011CDC55C600896906 /* Debug */,
+				BE6659021CDC55C600896906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6659031CDC55C600896906 /* Build configuration list for PBXNativeTarget "AxionVPNiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6659041CDC55C600896906 /* Debug */,
+				BE6659051CDC55C600896906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6659061CDC55C600896906 /* Build configuration list for PBXNativeTarget "AxionVPNiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6659071CDC55C600896906 /* Debug */,
+				BE6659081CDC55C600896906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFE69A41CE9761000A27814 /* Build configuration list for PBXNativeTarget "AxionPacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE69A21CE9761000A27814 /* Debug */,
+				BEFE69A31CE9761000A27814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE6658CB1CDC55C600896906 /* Project object */;
+}

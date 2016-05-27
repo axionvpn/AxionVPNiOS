@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F1770DE756FC289D1FACF73D920811079D6D47C5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F1770DE756FC289D1FACF73D920811079D6D47C5" : 0,
+    "B0219CE560C6D8E6818520F07B546F0C5C3BAC5C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "58E8983A-63ED-47DC-9422-500349F90A35",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F1770DE756FC289D1FACF73D920811079D6D47C5" : "AxionVPNiOS\/",
+    "B0219CE560C6D8E6818520F07B546F0C5C3BAC5C" : "AxionVPNFramework\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AxionVPNiOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AxionVPNiOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:willchilcutt\/axionvpnframework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0219CE560C6D8E6818520F07B546F0C5C3BAC5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:willchilcutt\/axionvpnios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F1770DE756FC289D1FACF73D920811079D6D47C5"
+    }
+  ]
+}
