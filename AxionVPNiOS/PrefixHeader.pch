@@ -10,5 +10,8 @@
 #define PrefixHeader_pch
 
 #import "UIViewController+AlertView.h"
+#import "UIViewController+LoginController.h"
+
+#define AxionGreenColor [UIColor colorWithRed:0.576 green:0.745 blue:0.298 alpha:1.000]
 
 #endif /* PrefixHeader_pch */

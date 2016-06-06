@@ -8,15 +8,15 @@
 
 #import "AppDelegateViewHelper.h"
 #import "AXVServerListViewController.h"
-#import "AXVLogInViewController.h"
-#import "AXVUserManager.h"
+#import "AXVGeositeMapViewController.h"
+#import "AXVSettingsTableViewController.h"
 
 @interface AppDelegateViewHelper ()
 {
     UIWindow *window;
-    AXVServerListViewController *viewController;
 }
 @end
+
 @implementation AppDelegateViewHelper
 
 -(void)setUpViewControllers
@@ -25,41 +25,46 @@
     
     window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    //Set up server list
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    NSArray <Class> *viewControllerClassesArray = @[[AXVServerListViewController class],
+                                                    [AXVGeositeMapViewController class],
+                                                    [AXVSettingsTableViewController class]];
+    
+    for (Class viewControllerclass in viewControllerClassesArray)
     {
-        viewController = [[AXVServerListViewController alloc] init];
+        UIViewController *viewController = [[viewControllerclass alloc] init];
         
         UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
-        [navController.navigationBar setTranslucent:NO];
-        
-        [window setRootViewController:navController];
+//        [navController.navigationBar setTranslucent:NO];
+
+        [tabBarController addChildViewController:navController];
     }
     
+    
+    [window setRootViewController:tabBarController];
     [window makeKeyAndVisible];
 }
 
 -(void)setUpAppearances
 {
-    UIColor *axionGreenColor = [UIColor colorWithRed:0.576
-                                               green:0.745
-                                                blue:0.298
-                                               alpha:1.000];
-    
-    //UIBarButtonItem
-    {
-        [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
-    }
-    
     //UINavigationBar
     {
         //Bar tint color
-        [[UINavigationBar appearance] setBarTintColor:axionGreenColor];
-        
+        [[UINavigationBar appearance] setBarTintColor:AxionGreenColor];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
         //Bar title text
         NSMutableDictionary *titleTextDictionary = [[NSMutableDictionary alloc] initWithDictionary:[[UINavigationBar appearance] titleTextAttributes]];
         [titleTextDictionary setObject:[UIColor whiteColor]
                                 forKey:NSForegroundColorAttributeName];
         [[UINavigationBar appearance] setTitleTextAttributes:titleTextDictionary];
+    }
+    
+    //UITabBar
+    {
+        [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+        [[UITabBar appearance] setTintColor:AxionGreenColor];
     }
 }
 

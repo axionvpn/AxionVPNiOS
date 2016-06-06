@@ -47,7 +47,8 @@
     NSString *userName = [self.userNameTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     NSString *password = self.passwordTextField.text;
     
-    AXVUser *user = [AXVUser userWithUserName:userName andPassword:password];
+    AXVUser *user = [AXVUser userWithUserName:userName
+                                  andPassword:password];
     
     AXVDataSource *dataSource = [[AXVDataSource alloc] init];
     

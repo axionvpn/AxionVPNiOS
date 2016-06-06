@@ -9,10 +9,6 @@
 #import "AXVLoadingViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface AXVLoadingViewController ()
-
-@end
-
 @implementation AXVLoadingViewController
 
 - (void)viewDidLoad
@@ -33,6 +29,11 @@
 
 -(void)addToView:(UIView *)superView
 {
+    while (superView.superview != nil)
+    {
+        superView = superView.superview;
+    }
+    
     [self.view setFrame:CGRectMake(0,
                                    0,
                                    superView.frame.size.width,

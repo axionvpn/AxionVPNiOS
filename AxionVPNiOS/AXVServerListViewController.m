@@ -8,22 +8,27 @@
 
 #import "AXVServerListViewController.h"
 #import "AXVUserManager.h"
-#import "AXVDataSource.h"
+#import "AXVGeositeManager.h"
 #import "AXVLogInViewController.h"
 #import <NetworkExtension/NetworkExtension.h>
 #import "AXVLoadingViewController.h"
 #import "PacketTunnelProvider.h"
+#import "AXVGeositeMapViewController.h"
+#import "AXVGeositeTableViewCell.h"
+#import "AXVSettingsTableViewController.h"
 
 static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServerListViewControllerCellIdentifier";
 
 @interface AXVServerListViewController () <UITableViewDelegate, UITableViewDataSource, AXVLogInViewControllerDelegate>
 {
-    AXVDataSource *dataSource;
     NSArray <AXVGeosite *> *geositesArray;
     UIRefreshControl *refreshControl;
     AXVLogInViewController *logInViewController;
     AXVLoadingViewController *loadingVC;
+    
+    AXVGeositeMapViewController *mapVC;
 }
+
 @end
 
 @implementation AXVServerListViewController
@@ -34,9 +39,18 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
     
     if (self != nil)
     {
-        dataSource = [[AXVDataSource alloc] init];
-        self.title = @"Choose a Location";
+        self.title = @"List View";
+        self.navigationItem.title = @"Choose a Location";
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"List View"
+                                                        image:[UIImage imageNamed:@"ic_location_city_36pt"]
+                                                          tag:0];
+        
         loadingVC = [[AXVLoadingViewController alloc] init];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(handleGeositesLoaded:)
+                                                     name:kAXVGeositeManagerLoadedGeositesNotificationName
+                                                   object:nil];
     }
     
     return self;
@@ -57,13 +71,10 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
         [self.tableView addSubview:refreshControl];
     }
     
-    //log out button
+    //Table view cells
     {
-        UIBarButtonItem *logOutButton = [[UIBarButtonItem alloc] initWithTitle:@"Log Out"
-                                                                         style:UIBarButtonItemStylePlain
-                                                                        target:self
-                                                                        action:@selector(logOut)];
-        [self.navigationItem setLeftBarButtonItem:logOutButton];
+        [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([AXVGeositeTableViewCell class]) bundle:nil]
+             forCellReuseIdentifier:kAXVServerListViewControllerCellIdentifier];
     }
 }
 
@@ -89,43 +100,6 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
     }
 }
 
--(void)showLogInScreen
-{
-    logInViewController = [[AXVLogInViewController alloc] initWithDelegate:self];
-    
-    [self.navigationController presentViewController:logInViewController
-                                            animated:YES
-                                          completion:nil];
-}
-
-#pragma mark - logout
-
--(void)logOut
-{
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Log Out?"
-                                                                             message:@"Are you sure you want to log out?"
-                                                                      preferredStyle:UIAlertControllerStyleAlert];
- 
-    UIAlertAction *logOutAction = [UIAlertAction actionWithTitle:@"Log Out"
-                                                           style:UIAlertActionStyleDefault
-                                                         handler:^(UIAlertAction * _Nonnull action)
-                                   {
-                                       [[AXVUserManager sharedInstance] logOut];
-                                       [self showLogInScreen];
-                                   }];
-    
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
-                                                           style:UIAlertActionStyleCancel
-                                                         handler:nil];
-
-    [alertController addAction:logOutAction];
-    [alertController addAction:cancelAction];
-    
-    [self presentViewController:alertController
-                       animated:YES
-                     completion:nil];
-}
-
 #pragma mark - Refresh control methods
 
 -(void)handleUserDidPullToRefresh
@@ -146,32 +120,38 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
 {
     [loadingVC addToView:self.navigationController.view];
 
-    [dataSource getGeositesWithCompletionBlock:^(NSError *error, NSArray <AXVGeosite *> *givenGeositesArray)
-     {
-         [loadingVC remove];
-         
-         //Refresh control
-         {
-             [refreshControl endRefreshing];
-             
-             [self performSelector:@selector(resetRefreshControlTitle)
-                        withObject:nil
-                        afterDelay:.5];
-         }
-         
-         if (error != nil)
-         {
-             NSLog(@"Error getting geosites: %@",error);
-             [self showErrorAlertWithTitle:@"Error"
-                                andMessage:[NSString stringWithFormat:@"Error obtaining locations: %@",error.localizedDescription]];
+    [[AXVGeositeManager sharedInstance] loadGeosites];
+}
 
-         }
-         else
-         {
-             geositesArray = givenGeositesArray;
-             [self.tableView reloadData];
-         }
-     }];
+#pragma mark - kAXVGeositeManagerLoadedGeositesNotificationName
+
+-(void)handleGeositesLoaded:(NSNotification *)notification
+{
+    [loadingVC remove];
+    
+    //Refresh control
+    {
+        [refreshControl endRefreshing];
+        
+        [self performSelector:@selector(resetRefreshControlTitle)
+                   withObject:nil
+                   afterDelay:.5];
+    }
+    
+    if ([notification.object isKindOfClass:[NSError class]] == YES)
+    {
+        NSError *error = notification.object;
+        NSLog(@"Error getting geosites: %@",error);
+        [self showErrorAlertWithTitle:@"Error"
+                           andMessage:[NSString stringWithFormat:@"Error obtaining locations: %@",error.localizedDescription]];
+        
+    }
+    else
+    {
+        geositesArray = notification.object;
+        
+        [self.tableView reloadData];
+    }
 }
 
 #pragma mark - UITableViewDataSource
@@ -183,17 +163,17 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kAXVServerListViewControllerCellIdentifier];
+    AXVGeositeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kAXVServerListViewControllerCellIdentifier];
     
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:kAXVServerListViewControllerCellIdentifier];
+        cell = [[AXVGeositeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:kAXVServerListViewControllerCellIdentifier];
     }
     
     AXVGeosite *geosite = [geositesArray objectAtIndex:indexPath.row];
     
-    [cell.textLabel setText:geosite.geoArea];
+    [cell handleGeosite:geosite];
     
     return cell;
 }
@@ -204,87 +184,79 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
 {
     AXVGeosite *geosite = [geositesArray objectAtIndex:indexPath.row];
     
-    [loadingVC addToView:self.navigationController.view];
+//    [loadingVC addToView:self.navigationController.view];
     
-    [dataSource getVPNConfigurationForUser:[[AXVUserManager sharedInstance] currentUser]
-                                andGeosite:geosite
-                       withCompletionBlock:^(NSError *error, AXVVPNConfiguration *configuration)
-    {
-        [loadingVC remove];
-        
-        if (error != nil)
-        {
-            NSLog(@"Error getting vpn config: %@",error);
-            [self showErrorAlertWithTitle:@"Error"
-                               andMessage:[NSString stringWithFormat:@"Error connecting to VPN: %@",error.localizedDescription]];
-        }
-        else
-        {
-            NETunnelProviderManager *vpnManager = [[NETunnelProviderManager alloc] init];
-            
-            [vpnManager loadFromPreferencesWithCompletionHandler:^(NSError * _Nullable error)
-            {
-                if (error == nil)
-                {
-                    if (vpnManager.protocolConfiguration == nil)
-                    {
-                        //Protocol
-                        {
-                            NETunnelProviderProtocol *protocol = [[NETunnelProviderProtocol alloc] init];
-                            [protocol setServerAddress:configuration.vpnServer];
-                            
-                            //proxy settings
-                            {
-                                NEProxySettings *proxySettings = [[NEProxySettings alloc] init];
-                                
-                                //Proxy server
-                                {
-                                    NEProxyServer *proxyServer = [[NEProxyServer alloc] initWithAddress:configuration.vpnServer
-                                                                                                   port:configuration.port.integerValue];
-                                    
-                                    [proxySettings setHTTPServer:proxyServer];
-                                }
-                                
-                                [protocol setProxySettings:proxySettings];
-                            }
-                            
-                            [vpnManager setProtocolConfiguration:protocol];
-                        }
-
-                        [vpnManager setEnabled:YES];
-                        
-                        [vpnManager saveToPreferencesWithCompletionHandler:^(NSError * _Nullable error)
-                         {
-                             if (error != nil)
-                             {
-                                 NSLog(@"Error saving to preferences: %@",error);
-                             }
-                             else
-                             {
-                                 NSLog(@"Saved to preferences successfully!!!");
-                             }
-                         }];
-                    }
-                    else
-                    {
-                        NSLog(@"VPN manager protocol config already set!");
-                    }
-                }
-                else
-                {
-                    NSLog(@"Error loading from preferences: %@",error);
-                }
-            }];
-        }
-    }];
-}
-
-#pragma mark - AXVLogInViewControllerDelegate
-
--(void)handleLogInViewControllerIsDone
-{
-    [self.navigationController dismissViewControllerAnimated:YES
-                                                  completion:nil];
+//    [dataSource getVPNConfigurationForUser:[[AXVUserManager sharedInstance] currentUser]
+//                                andGeosite:geosite
+//                       withCompletionBlock:^(NSError *error, AXVVPNConfiguration *configuration)
+//    {
+//        [loadingVC remove];
+//        
+//        if (error != nil)
+//        {
+//            NSLog(@"Error getting vpn config: %@",error);
+//            [self showErrorAlertWithTitle:@"Error"
+//                               andMessage:[NSString stringWithFormat:@"Error connecting to VPN: %@",error.localizedDescription]];
+//        }
+//        else
+//        {
+//            NETunnelProviderManager *vpnManager = [[NETunnelProviderManager alloc] init];
+//            
+//            [vpnManager loadFromPreferencesWithCompletionHandler:^(NSError * _Nullable error)
+//            {
+//                if (error == nil)
+//                {
+//                    if (vpnManager.protocolConfiguration == nil)
+//                    {
+//                        //Protocol
+//                        {
+//                            NETunnelProviderProtocol *protocol = [[NETunnelProviderProtocol alloc] init];
+//                            [protocol setServerAddress:configuration.vpnServer];
+//                            
+//                            //proxy settings
+//                            {
+//                                NEProxySettings *proxySettings = [[NEProxySettings alloc] init];
+//                                
+//                                //Proxy server
+//                                {
+//                                    NEProxyServer *proxyServer = [[NEProxyServer alloc] initWithAddress:configuration.vpnServer
+//                                                                                                   port:configuration.port.integerValue];
+//                                    
+//                                    [proxySettings setHTTPServer:proxyServer];
+//                                }
+//                                
+//                                [protocol setProxySettings:proxySettings];
+//                            }
+//                            
+//                            [vpnManager setProtocolConfiguration:protocol];
+//                        }
+//
+//                        [vpnManager setEnabled:YES];
+//                        
+//                        [vpnManager saveToPreferencesWithCompletionHandler:^(NSError * _Nullable error)
+//                         {
+//                             if (error != nil)
+//                             {
+//                                 NSLog(@"Error saving to preferences: %@",error);
+//                             }
+//                             else
+//                             {
+//                                 NSLog(@"Saved to preferences successfully!!!");
+//                             }
+//                         }];
+//                    }
+//                    else
+//                    {
+//                        NSLog(@"VPN manager protocol config already set!");
+//                    }
+//                }
+//                else
+//                {
+//                    NSLog(@"Error loading from preferences: %@",error);
+//                }
+//            }];
+//        }
+//    }];
 }
 
 @end

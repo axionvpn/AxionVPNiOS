@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1DD63D1CF55EF400727EA0 /* AXVGeositeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1DD63B1CF55EF400727EA0 /* AXVGeositeMapViewController.m */; };
+		BE1DD63E1CF55EF400727EA0 /* AXVGeositeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1DD63C1CF55EF400727EA0 /* AXVGeositeMapViewController.xib */; };
+		BE1DD6401CF5654F00727EA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1DD63F1CF5654F00727EA0 /* MapKit.framework */; };
+		BE1F483A1D02496D000FC62E /* AXVLogInViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1F48391D02496D000FC62E /* AXVLogInViewController~ipad.xib */; };
 		BE6658D81CDC55C600896906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658D71CDC55C600896906 /* main.m */; };
 		BE6658DB1CDC55C600896906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658DA1CDC55C600896906 /* AppDelegate.m */; };
 		BE6658E31CDC55C600896906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6658E21CDC55C600896906 /* Assets.xcassets */; };
@@ -34,6 +38,17 @@
 		BE70DA3C1CE53D020036A324 /* UIViewController+AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */; };
 		BE70DA411CE540A80036A324 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70DA401CE540A80036A324 /* SafariServices.framework */; };
 		BE7445121CEA96EA00C12D4A /* AXVVPNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7445111CEA96EA00C12D4A /* AXVVPNConfiguration.m */; };
+		BE76CE5D1D052A3A00C052DA /* ClientTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE571D052A3A00C052DA /* ClientTunnel.swift */; };
+		BE76CE5E1D052A3A00C052DA /* ClientTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE571D052A3A00C052DA /* ClientTunnel.swift */; };
+		BE76CE5F1D052A3A00C052DA /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE581D052A3A00C052DA /* Connection.swift */; };
+		BE76CE601D052A3A00C052DA /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE581D052A3A00C052DA /* Connection.swift */; };
+		BE76CE611D052A3A00C052DA /* FilterUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE591D052A3A00C052DA /* FilterUtilities.swift */; };
+		BE76CE621D052A3A00C052DA /* FilterUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE591D052A3A00C052DA /* FilterUtilities.swift */; };
+		BE76CE631D052A3A00C052DA /* Tunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5B1D052A3A00C052DA /* Tunnel.swift */; };
+		BE76CE641D052A3A00C052DA /* Tunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5B1D052A3A00C052DA /* Tunnel.swift */; };
+		BE76CE651D052A3A00C052DA /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5C1D052A3A00C052DA /* util.swift */; };
+		BE76CE661D052A3A00C052DA /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5C1D052A3A00C052DA /* util.swift */; };
+		BE7DBDED1D04F2D500961FD6 /* UIViewController+LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7DBDEC1D04F2D500961FD6 /* UIViewController+LoginController.m */; };
 		BE8096FF1CE4001100FF749A /* axionlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8096FE1CE4001100FF749A /* axionlogo.png */; };
 		BE8097091CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097021CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m */; };
 		BE80970A1CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097041CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m */; };
@@ -41,6 +56,31 @@
 		BE80970C1CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097081CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		BE80970F1CE4071B00FF749A /* AppDelegateViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80970E1CE4071B00FF749A /* AppDelegateViewHelper.m */; };
 		BE8097131CE4098200FF749A /* STKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097121CE4098200FF749A /* STKeychain.m */; };
+		BE9D8BE31CF6B37C00065AF2 /* amsterdam.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD11CF6B37C00065AF2 /* amsterdam.jpeg */; };
+		BE9D8BE41CF6B37C00065AF2 /* atlanta.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD21CF6B37C00065AF2 /* atlanta.jpeg */; };
+		BE9D8BE51CF6B37C00065AF2 /* dallas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD31CF6B37C00065AF2 /* dallas.jpeg */; };
+		BE9D8BE61CF6B37C00065AF2 /* frankfurt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD41CF6B37C00065AF2 /* frankfurt.jpeg */; };
+		BE9D8BE71CF6B37C00065AF2 /* helsinki.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD51CF6B37C00065AF2 /* helsinki.jpeg */; };
+		BE9D8BE81CF6B37C00065AF2 /* hongkong.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD61CF6B37C00065AF2 /* hongkong.jpeg */; };
+		BE9D8BE91CF6B37C00065AF2 /* johannesburg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD71CF6B37C00065AF2 /* johannesburg.jpeg */; };
+		BE9D8BEA1CF6B37C00065AF2 /* losangeles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD81CF6B37C00065AF2 /* losangeles.jpeg */; };
+		BE9D8BEB1CF6B37C00065AF2 /* luxembourg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BD91CF6B37C00065AF2 /* luxembourg.jpeg */; };
+		BE9D8BEC1CF6B37C00065AF2 /* milan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BDA1CF6B37C00065AF2 /* milan.jpeg */; };
+		BE9D8BED1CF6B37C00065AF2 /* montreal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BDB1CF6B37C00065AF2 /* montreal.jpeg */; };
+		BE9D8BEE1CF6B37C00065AF2 /* moscow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BDC1CF6B37C00065AF2 /* moscow.jpeg */; };
+		BE9D8BEF1CF6B37C00065AF2 /* newyork.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BDD1CF6B37C00065AF2 /* newyork.jpeg */; };
+		BE9D8BF01CF6B37C00065AF2 /* paris.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BDE1CF6B37C00065AF2 /* paris.jpeg */; };
+		BE9D8BF11CF6B37C00065AF2 /* singapore.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BDF1CF6B37C00065AF2 /* singapore.jpeg */; };
+		BE9D8BF21CF6B37C00065AF2 /* stockholm.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BE01CF6B37C00065AF2 /* stockholm.jpeg */; };
+		BE9D8BF31CF6B37C00065AF2 /* sydney.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BE11CF6B37C00065AF2 /* sydney.jpeg */; };
+		BE9D8BF41CF6B37C00065AF2 /* tirana.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BE21CF6B37C00065AF2 /* tirana.jpeg */; };
+		BE9D8BF91CF6B53000065AF2 /* AXVGeositeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9D8BF71CF6B53000065AF2 /* AXVGeositeTableViewCell.m */; };
+		BE9D8BFA1CF6B53000065AF2 /* AXVGeositeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9D8BF81CF6B53000065AF2 /* AXVGeositeTableViewCell.xib */; };
+		BEA19CC11D01EC8C0049F923 /* AXVGeositeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA19CC01D01EC8C0049F923 /* AXVGeositeManager.m */; };
+		BEA19CCD1D02005C0049F923 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA19CCC1D02005C0049F923 /* QuartzCore.framework */; };
+		BEA19CD11D02012E0049F923 /* AXVSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA19CCF1D02012E0049F923 /* AXVSettingsTableViewController.m */; };
+		BEA19CD21D02012E0049F923 /* AXVSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA19CD01D02012E0049F923 /* AXVSettingsTableViewController.xib */; };
+		BEA19CD61D0203DE0049F923 /* AXVTableSectionRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA19CD51D0203DE0049F923 /* AXVTableSectionRepresentation.m */; };
 		BEA4E18E1CE16A0A0059F01B /* AXVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA4E18D1CE16A0A0059F01B /* AXVUser.m */; };
 		BEFE699C1CE9761000A27814 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE699B1CE9761000A27814 /* PacketTunnelProvider.m */; };
 		BEFE69A11CE9761000A27814 /* AxionPacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -85,6 +125,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE1DD63A1CF55EF400727EA0 /* AXVGeositeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVGeositeMapViewController.h; sourceTree = "<group>"; };
+		BE1DD63B1CF55EF400727EA0 /* AXVGeositeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVGeositeMapViewController.m; sourceTree = "<group>"; };
+		BE1DD63C1CF55EF400727EA0 /* AXVGeositeMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVGeositeMapViewController.xib; sourceTree = "<group>"; };
+		BE1DD63F1CF5654F00727EA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BE1F48391D02496D000FC62E /* AXVLogInViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AXVLogInViewController~ipad.xib"; sourceTree = "<group>"; };
 		BE6658D31CDC55C600896906 /* AxionVPNiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxionVPNiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6658D71CDC55C600896906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE6658D91CDC55C600896906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +181,16 @@
 		BE70DA401CE540A80036A324 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		BE7445101CEA96EA00C12D4A /* AXVVPNConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVVPNConfiguration.h; path = ../AxionVPNFramework/AXVVPNConfiguration.h; sourceTree = "<group>"; };
 		BE7445111CEA96EA00C12D4A /* AXVVPNConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVVPNConfiguration.m; path = ../AxionVPNFramework/AXVVPNConfiguration.m; sourceTree = "<group>"; };
+		BE76CE551D052A3A00C052DA /* AxionVPNiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AxionVPNiOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE76CE561D052A3A00C052DA /* AxionPacketTunnel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AxionPacketTunnel-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE76CE571D052A3A00C052DA /* ClientTunnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientTunnel.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/ClientTunnel.swift; sourceTree = "<group>"; };
+		BE76CE581D052A3A00C052DA /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/Connection.swift; sourceTree = "<group>"; };
+		BE76CE591D052A3A00C052DA /* FilterUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterUtilities.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/FilterUtilities.swift; sourceTree = "<group>"; };
+		BE76CE5A1D052A3A00C052DA /* SimpleTunnelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleTunnelServices.h; path = ../AxionVPNFramework/Apple/SimpleTunnel/SimpleTunnelServices.h; sourceTree = "<group>"; };
+		BE76CE5B1D052A3A00C052DA /* Tunnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tunnel.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/Tunnel.swift; sourceTree = "<group>"; };
+		BE76CE5C1D052A3A00C052DA /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = util.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/util.swift; sourceTree = "<group>"; };
+		BE7DBDEB1D04F2D500961FD6 /* UIViewController+LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LoginController.h"; sourceTree = "<group>"; };
+		BE7DBDEC1D04F2D500961FD6 /* UIViewController+LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LoginController.m"; sourceTree = "<group>"; };
 		BE8096FE1CE4001100FF749A /* axionlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axionlogo.png; sourceTree = "<group>"; };
 		BE8097011CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		BE8097021CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
@@ -149,6 +204,35 @@
 		BE80970E1CE4071B00FF749A /* AppDelegateViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateViewHelper.m; sourceTree = "<group>"; };
 		BE8097111CE4098200FF749A /* STKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKeychain.h; sourceTree = "<group>"; };
 		BE8097121CE4098200FF749A /* STKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKeychain.m; sourceTree = "<group>"; };
+		BE9D8BD11CF6B37C00065AF2 /* amsterdam.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amsterdam.jpeg; sourceTree = "<group>"; };
+		BE9D8BD21CF6B37C00065AF2 /* atlanta.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atlanta.jpeg; sourceTree = "<group>"; };
+		BE9D8BD31CF6B37C00065AF2 /* dallas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dallas.jpeg; sourceTree = "<group>"; };
+		BE9D8BD41CF6B37C00065AF2 /* frankfurt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frankfurt.jpeg; sourceTree = "<group>"; };
+		BE9D8BD51CF6B37C00065AF2 /* helsinki.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = helsinki.jpeg; sourceTree = "<group>"; };
+		BE9D8BD61CF6B37C00065AF2 /* hongkong.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hongkong.jpeg; sourceTree = "<group>"; };
+		BE9D8BD71CF6B37C00065AF2 /* johannesburg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = johannesburg.jpeg; sourceTree = "<group>"; };
+		BE9D8BD81CF6B37C00065AF2 /* losangeles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = losangeles.jpeg; sourceTree = "<group>"; };
+		BE9D8BD91CF6B37C00065AF2 /* luxembourg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = luxembourg.jpeg; sourceTree = "<group>"; };
+		BE9D8BDA1CF6B37C00065AF2 /* milan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milan.jpeg; sourceTree = "<group>"; };
+		BE9D8BDB1CF6B37C00065AF2 /* montreal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = montreal.jpeg; sourceTree = "<group>"; };
+		BE9D8BDC1CF6B37C00065AF2 /* moscow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moscow.jpeg; sourceTree = "<group>"; };
+		BE9D8BDD1CF6B37C00065AF2 /* newyork.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newyork.jpeg; sourceTree = "<group>"; };
+		BE9D8BDE1CF6B37C00065AF2 /* paris.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paris.jpeg; sourceTree = "<group>"; };
+		BE9D8BDF1CF6B37C00065AF2 /* singapore.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = singapore.jpeg; sourceTree = "<group>"; };
+		BE9D8BE01CF6B37C00065AF2 /* stockholm.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stockholm.jpeg; sourceTree = "<group>"; };
+		BE9D8BE11CF6B37C00065AF2 /* sydney.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sydney.jpeg; sourceTree = "<group>"; };
+		BE9D8BE21CF6B37C00065AF2 /* tirana.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tirana.jpeg; sourceTree = "<group>"; };
+		BE9D8BF61CF6B53000065AF2 /* AXVGeositeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVGeositeTableViewCell.h; sourceTree = "<group>"; };
+		BE9D8BF71CF6B53000065AF2 /* AXVGeositeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVGeositeTableViewCell.m; sourceTree = "<group>"; };
+		BE9D8BF81CF6B53000065AF2 /* AXVGeositeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVGeositeTableViewCell.xib; sourceTree = "<group>"; };
+		BEA19CBF1D01EC8C0049F923 /* AXVGeositeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVGeositeManager.h; path = ../AxionVPNFramework/AXVGeositeManager.h; sourceTree = "<group>"; };
+		BEA19CC01D01EC8C0049F923 /* AXVGeositeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVGeositeManager.m; path = ../AxionVPNFramework/AXVGeositeManager.m; sourceTree = "<group>"; };
+		BEA19CCC1D02005C0049F923 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BEA19CCE1D02012E0049F923 /* AXVSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVSettingsTableViewController.h; sourceTree = "<group>"; };
+		BEA19CCF1D02012E0049F923 /* AXVSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVSettingsTableViewController.m; sourceTree = "<group>"; };
+		BEA19CD01D02012E0049F923 /* AXVSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVSettingsTableViewController.xib; sourceTree = "<group>"; };
+		BEA19CD41D0203DE0049F923 /* AXVTableSectionRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVTableSectionRepresentation.h; path = ../AxionVPNFramework/TableSectionRepresentation/AXVTableSectionRepresentation.h; sourceTree = "<group>"; };
+		BEA19CD51D0203DE0049F923 /* AXVTableSectionRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVTableSectionRepresentation.m; path = ../AxionVPNFramework/TableSectionRepresentation/AXVTableSectionRepresentation.m; sourceTree = "<group>"; };
 		BEA4E18C1CE16A0A0059F01B /* AXVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVUser.h; path = ../AxionVPNFramework/AXVUser.h; sourceTree = "<group>"; };
 		BEA4E18D1CE16A0A0059F01B /* AXVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVUser.m; path = ../AxionVPNFramework/AXVUser.m; sourceTree = "<group>"; };
 		BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AxionPacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +247,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA19CCD1D02005C0049F923 /* QuartzCore.framework in Frameworks */,
+				BE1DD6401CF5654F00727EA0 /* MapKit.framework in Frameworks */,
 				BE70DA411CE540A80036A324 /* SafariServices.framework in Frameworks */,
 				BE66ACBD1CEC11FA00940B67 /* NetworkExtension.framework in Frameworks */,
 			);
@@ -193,6 +279,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1DD6391CF55ED300727EA0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DD63A1CF55EF400727EA0 /* AXVGeositeMapViewController.h */,
+				BE1DD63B1CF55EF400727EA0 /* AXVGeositeMapViewController.m */,
+				BE1DD63C1CF55EF400727EA0 /* AXVGeositeMapViewController.xib */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		BE6658CA1CDC55C600896906 = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +379,9 @@
 		BE66590B1CDC568A00896906 /* Apple */ = {
 			isa = PBXGroup;
 			children = (
+				BE76CE541D052A1900C052DA /* SimpleTunnel */,
+				BEA19CCC1D02005C0049F923 /* QuartzCore.framework */,
+				BE1DD63F1CF5654F00727EA0 /* MapKit.framework */,
 				BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */,
 				BE70DA401CE540A80036A324 /* SafariServices.framework */,
 			);
@@ -302,6 +401,8 @@
 		BE66590D1CDC569300896906 /* AxionVPN */ = {
 			isa = PBXGroup;
 			children = (
+				BEA19CD31D02035A0049F923 /* TableSectionRepresentation */,
+				BEA19CBE1D01EC760049F923 /* Geositemanager */,
 				BE66590F1CDC56B700896906 /* Service */,
 			);
 			name = AxionVPN;
@@ -312,7 +413,9 @@
 			children = (
 				BE66ACB51CEBFCAE00940B67 /* Loading */,
 				BE6A8C621CE2E6CE00CFDD9A /* Login */,
+				BE1DD6391CF55ED300727EA0 /* Map */,
 				BE6A8C611CE2E6CA00CFDD9A /* Server List */,
+				BEA19CBD1D01EA510049F923 /* Settings */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -370,6 +473,7 @@
 		BE6A8C611CE2E6CA00CFDD9A /* Server List */ = {
 			isa = PBXGroup;
 			children = (
+				BE9D8BF51CF6B4CB00065AF2 /* Table View Cell */,
 				BE66592A1CDC593B00896906 /* AXVServerListViewController.h */,
 				BE66592B1CDC593B00896906 /* AXVServerListViewController.m */,
 				BE66592C1CDC593B00896906 /* AXVServerListViewController.xib */,
@@ -383,6 +487,7 @@
 				BE6A8C631CE2E6E300CFDD9A /* AXVLogInViewController.h */,
 				BE6A8C641CE2E6E300CFDD9A /* AXVLogInViewController.m */,
 				BE6A8C651CE2E6E300CFDD9A /* AXVLogInViewController.xib */,
+				BE1F48391D02496D000FC62E /* AXVLogInViewController~ipad.xib */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -392,13 +497,32 @@
 			children = (
 				BE70DA3A1CE53D020036A324 /* UIViewController+AlertView.h */,
 				BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */,
+				BE7DBDEB1D04F2D500961FD6 /* UIViewController+LoginController.h */,
+				BE7DBDEC1D04F2D500961FD6 /* UIViewController+LoginController.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		BE76CE541D052A1900C052DA /* SimpleTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				BE76CE571D052A3A00C052DA /* ClientTunnel.swift */,
+				BE76CE581D052A3A00C052DA /* Connection.swift */,
+				BE76CE591D052A3A00C052DA /* FilterUtilities.swift */,
+				BE76CE5A1D052A3A00C052DA /* SimpleTunnelServices.h */,
+				BE76CE5B1D052A3A00C052DA /* Tunnel.swift */,
+				BE76CE5C1D052A3A00C052DA /* util.swift */,
+				BE76CE551D052A3A00C052DA /* AxionVPNiOS-Bridging-Header.h */,
+				BE76CE561D052A3A00C052DA /* AxionPacketTunnel-Bridging-Header.h */,
+			);
+			name = SimpleTunnel;
 			sourceTree = "<group>";
 		};
 		BE8096FD1CE3FFED00FF749A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BEA19CC21D01F6480049F923 /* tabbaritems */,
+				BE9D8BD01CF6B36F00065AF2 /* geosites */,
 				BE8096FE1CE4001100FF749A /* axionlogo.png */,
 			);
 			name = Images;
@@ -428,6 +552,76 @@
 			);
 			name = STKeychain;
 			path = "../AxionVPNFramework/Third Party/STKeychain";
+			sourceTree = "<group>";
+		};
+		BE9D8BD01CF6B36F00065AF2 /* geosites */ = {
+			isa = PBXGroup;
+			children = (
+				BE9D8BD11CF6B37C00065AF2 /* amsterdam.jpeg */,
+				BE9D8BD21CF6B37C00065AF2 /* atlanta.jpeg */,
+				BE9D8BD31CF6B37C00065AF2 /* dallas.jpeg */,
+				BE9D8BD41CF6B37C00065AF2 /* frankfurt.jpeg */,
+				BE9D8BD51CF6B37C00065AF2 /* helsinki.jpeg */,
+				BE9D8BD61CF6B37C00065AF2 /* hongkong.jpeg */,
+				BE9D8BD71CF6B37C00065AF2 /* johannesburg.jpeg */,
+				BE9D8BD81CF6B37C00065AF2 /* losangeles.jpeg */,
+				BE9D8BD91CF6B37C00065AF2 /* luxembourg.jpeg */,
+				BE9D8BDA1CF6B37C00065AF2 /* milan.jpeg */,
+				BE9D8BDB1CF6B37C00065AF2 /* montreal.jpeg */,
+				BE9D8BDC1CF6B37C00065AF2 /* moscow.jpeg */,
+				BE9D8BDD1CF6B37C00065AF2 /* newyork.jpeg */,
+				BE9D8BDE1CF6B37C00065AF2 /* paris.jpeg */,
+				BE9D8BDF1CF6B37C00065AF2 /* singapore.jpeg */,
+				BE9D8BE01CF6B37C00065AF2 /* stockholm.jpeg */,
+				BE9D8BE11CF6B37C00065AF2 /* sydney.jpeg */,
+				BE9D8BE21CF6B37C00065AF2 /* tirana.jpeg */,
+			);
+			name = geosites;
+			sourceTree = "<group>";
+		};
+		BE9D8BF51CF6B4CB00065AF2 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BE9D8BF61CF6B53000065AF2 /* AXVGeositeTableViewCell.h */,
+				BE9D8BF71CF6B53000065AF2 /* AXVGeositeTableViewCell.m */,
+				BE9D8BF81CF6B53000065AF2 /* AXVGeositeTableViewCell.xib */,
+			);
+			name = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		BEA19CBD1D01EA510049F923 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BEA19CCE1D02012E0049F923 /* AXVSettingsTableViewController.h */,
+				BEA19CCF1D02012E0049F923 /* AXVSettingsTableViewController.m */,
+				BEA19CD01D02012E0049F923 /* AXVSettingsTableViewController.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		BEA19CBE1D01EC760049F923 /* Geositemanager */ = {
+			isa = PBXGroup;
+			children = (
+				BEA19CBF1D01EC8C0049F923 /* AXVGeositeManager.h */,
+				BEA19CC01D01EC8C0049F923 /* AXVGeositeManager.m */,
+			);
+			name = Geositemanager;
+			sourceTree = "<group>";
+		};
+		BEA19CC21D01F6480049F923 /* tabbaritems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tabbaritems;
+			sourceTree = "<group>";
+		};
+		BEA19CD31D02035A0049F923 /* TableSectionRepresentation */ = {
+			isa = PBXGroup;
+			children = (
+				BEA19CD41D0203DE0049F923 /* AXVTableSectionRepresentation.h */,
+				BEA19CD51D0203DE0049F923 /* AXVTableSectionRepresentation.m */,
+			);
+			name = TableSectionRepresentation;
 			sourceTree = "<group>";
 		};
 		BEFE69971CE9761000A27814 /* AxionPacketTunnel */ = {
@@ -593,12 +787,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9D8BE81CF6B37C00065AF2 /* hongkong.jpeg in Resources */,
+				BE9D8BE71CF6B37C00065AF2 /* helsinki.jpeg in Resources */,
+				BE9D8BF11CF6B37C00065AF2 /* singapore.jpeg in Resources */,
+				BE9D8BE61CF6B37C00065AF2 /* frankfurt.jpeg in Resources */,
+				BEA19CD21D02012E0049F923 /* AXVSettingsTableViewController.xib in Resources */,
+				BE9D8BE31CF6B37C00065AF2 /* amsterdam.jpeg in Resources */,
 				BE6658E61CDC55C600896906 /* LaunchScreen.storyboard in Resources */,
+				BE9D8BED1CF6B37C00065AF2 /* montreal.jpeg in Resources */,
+				BE9D8BE51CF6B37C00065AF2 /* dallas.jpeg in Resources */,
+				BE9D8BF41CF6B37C00065AF2 /* tirana.jpeg in Resources */,
 				BE66ACBA1CEBFCC600940B67 /* AXVLoadingViewController.xib in Resources */,
+				BE1F483A1D02496D000FC62E /* AXVLogInViewController~ipad.xib in Resources */,
+				BE9D8BF01CF6B37C00065AF2 /* paris.jpeg in Resources */,
+				BE9D8BE91CF6B37C00065AF2 /* johannesburg.jpeg in Resources */,
+				BE9D8BF31CF6B37C00065AF2 /* sydney.jpeg in Resources */,
+				BE9D8BEC1CF6B37C00065AF2 /* milan.jpeg in Resources */,
+				BE9D8BEE1CF6B37C00065AF2 /* moscow.jpeg in Resources */,
+				BE1DD63E1CF55EF400727EA0 /* AXVGeositeMapViewController.xib in Resources */,
+				BE9D8BFA1CF6B53000065AF2 /* AXVGeositeTableViewCell.xib in Resources */,
 				BE66592E1CDC593B00896906 /* AXVServerListViewController.xib in Resources */,
+				BE9D8BE41CF6B37C00065AF2 /* atlanta.jpeg in Resources */,
 				BE8096FF1CE4001100FF749A /* axionlogo.png in Resources */,
+				BE9D8BEF1CF6B37C00065AF2 /* newyork.jpeg in Resources */,
 				BE6A8C671CE2E6E300CFDD9A /* AXVLogInViewController.xib in Resources */,
+				BE9D8BF21CF6B37C00065AF2 /* stockholm.jpeg in Resources */,
+				BE9D8BEB1CF6B37C00065AF2 /* luxembourg.jpeg in Resources */,
 				BE6658E31CDC55C600896906 /* Assets.xcassets in Resources */,
+				BE9D8BEA1CF6B37C00065AF2 /* losangeles.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,14 +846,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA19CD11D02012E0049F923 /* AXVSettingsTableViewController.m in Sources */,
 				BE66592D1CDC593B00896906 /* AXVServerListViewController.m in Sources */,
 				BE6A8C661CE2E6E300CFDD9A /* AXVLogInViewController.m in Sources */,
+				BE76CE611D052A3A00C052DA /* FilterUtilities.swift in Sources */,
+				BEA19CD61D0203DE0049F923 /* AXVTableSectionRepresentation.m in Sources */,
+				BE9D8BF91CF6B53000065AF2 /* AXVGeositeTableViewCell.m in Sources */,
 				BE8097091CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				BE80970B1CE401CC00FF749A /* TPKeyboardAvoidingTableView.m in Sources */,
 				BE6659261CDC585200896906 /* AFSecurityPolicy.m in Sources */,
 				BE6659281CDC585200896906 /* AFURLResponseSerialization.m in Sources */,
 				BE6659341CDC5ADA00896906 /* AXVObject.m in Sources */,
 				BE6659151CDC56E500896906 /* AXVDataSource.m in Sources */,
+				BE1DD63D1CF55EF400727EA0 /* AXVGeositeMapViewController.m in Sources */,
 				BE80970C1CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				BE6658DB1CDC55C600896906 /* AppDelegate.m in Sources */,
 				BE7445121CEA96EA00C12D4A /* AXVVPNConfiguration.m in Sources */,
@@ -648,10 +869,16 @@
 				BE6658D81CDC55C600896906 /* main.m in Sources */,
 				BEA4E18E1CE16A0A0059F01B /* AXVUser.m in Sources */,
 				BE66ACB91CEBFCC600940B67 /* AXVLoadingViewController.m in Sources */,
+				BE7DBDED1D04F2D500961FD6 /* UIViewController+LoginController.m in Sources */,
 				BE80970A1CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m in Sources */,
 				BE6659251CDC585200896906 /* AFNetworkReachabilityManager.m in Sources */,
+				BEA19CC11D01EC8C0049F923 /* AXVGeositeManager.m in Sources */,
+				BE76CE631D052A3A00C052DA /* Tunnel.swift in Sources */,
+				BE76CE651D052A3A00C052DA /* util.swift in Sources */,
 				BE6659121CDC56D600896906 /* AXVUserManager.m in Sources */,
+				BE76CE5F1D052A3A00C052DA /* Connection.swift in Sources */,
 				BE6659271CDC585200896906 /* AFURLRequestSerialization.m in Sources */,
+				BE76CE5D1D052A3A00C052DA /* ClientTunnel.swift in Sources */,
 				BE70DA3C1CE53D020036A324 /* UIViewController+AlertView.m in Sources */,
 				BE8097131CE4098200FF749A /* STKeychain.m in Sources */,
 			);
@@ -677,6 +904,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE76CE641D052A3A00C052DA /* Tunnel.swift in Sources */,
+				BE76CE5E1D052A3A00C052DA /* ClientTunnel.swift in Sources */,
+				BE76CE601D052A3A00C052DA /* Connection.swift in Sources */,
+				BE76CE661D052A3A00C052DA /* util.swift in Sources */,
+				BE76CE621D052A3A00C052DA /* FilterUtilities.swift in Sources */,
 				BEFE699C1CE9761000A27814 /* PacketTunnelProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -805,8 +1037,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
 				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
@@ -815,6 +1049,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+				SWIFT_OBJC_BRIDGING_HEADER = "AxionVPNiOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -822,8 +1059,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
 				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
@@ -832,6 +1071,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+				SWIFT_OBJC_BRIDGING_HEADER = "AxionVPNiOS-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -884,6 +1125,7 @@
 		BEFE69A21CE9761000A27814 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -893,12 +1135,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "740ed46e-4e6f-446b-ba0a-c1a2965f25a6";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AxionPacketTunnel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BEFE69A31CE9761000A27814 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -908,6 +1153,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "740ed46e-4e6f-446b-ba0a-c1a2965f25a6";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AxionPacketTunnel-Bridging-Header.h";
 			};
 			name = Release;
 		};
