@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
@@ -52,7 +51,7 @@
                             </connections>
                         </textField>
                         <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WLm-dT-qea">
-                            <rect key="frame" x="101" y="122" width="118" height="30"/>
+                            <rect key="frame" x="101" y="130" width="118" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <state key="normal" title="Log In">
@@ -63,7 +62,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hlk-0e-lly">
-                            <rect key="frame" x="30" y="160" width="260" height="33"/>
+                            <rect key="frame" x="30" y="168" width="260" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <state key="normal" title="Get an AxionVPN account">
@@ -71,6 +70,17 @@
                             </state>
                             <connections>
                                 <action selector="handleUserPressedGetAnAccountButton:" destination="-1" eventType="touchUpInside" id="21Y-sT-UmJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HfS-Ux-qI1">
+                            <rect key="frame" x="109" y="96" width="102" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <state key="normal" title="Forgot Password?">
+                                <color key="titleColor" red="0.82619791666666664" green="0.82619791666666664" blue="0.82619791666666664" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="handleUserPressedForgotPasswordButton:" destination="-1" eventType="touchUpInside" id="qfT-5X-D7i"/>
                             </connections>
                         </button>
                     </subviews>

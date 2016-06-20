@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *logOutCell;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ipAddressLabel;
 
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE00F6671D1102010056462B /* AXVIPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE00F6661D1102010056462B /* AXVIPHelper.m */; };
+		BE121B3B1D07A353006EB8B3 /* IdentityTrust.m in Sources */ = {isa = PBXBuildFile; fileRef = BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */; };
+		BE121B3C1D07A4CA006EB8B3 /* IdentityTrust.m in Sources */ = {isa = PBXBuildFile; fileRef = BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */; };
+		BE121B431D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */; };
+		BE121B441D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */; };
 		BE1DD63D1CF55EF400727EA0 /* AXVGeositeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1DD63B1CF55EF400727EA0 /* AXVGeositeMapViewController.m */; };
 		BE1DD63E1CF55EF400727EA0 /* AXVGeositeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1DD63C1CF55EF400727EA0 /* AXVGeositeMapViewController.xib */; };
 		BE1DD6401CF5654F00727EA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1DD63F1CF5654F00727EA0 /* MapKit.framework */; };
@@ -125,6 +130,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE00F6651D1102010056462B /* AXVIPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVIPHelper.h; path = ../AxionVPNFramework/AXVIPHelper.h; sourceTree = "<group>"; };
+		BE00F6661D1102010056462B /* AXVIPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVIPHelper.m; path = ../AxionVPNFramework/AXVIPHelper.m; sourceTree = "<group>"; };
+		BE121B391D07A353006EB8B3 /* IdentityTrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdentityTrust.h; path = ../AxionVPNFramework/Apple/SimpleTunnel/IdentityTrust.h; sourceTree = "<group>"; };
+		BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IdentityTrust.m; path = ../AxionVPNFramework/Apple/SimpleTunnel/IdentityTrust.m; sourceTree = "<group>"; };
+		BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientTunnelConnection.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/ClientTunnelConnection.swift; sourceTree = "<group>"; };
 		BE1DD63A1CF55EF400727EA0 /* AXVGeositeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVGeositeMapViewController.h; sourceTree = "<group>"; };
 		BE1DD63B1CF55EF400727EA0 /* AXVGeositeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVGeositeMapViewController.m; sourceTree = "<group>"; };
 		BE1DD63C1CF55EF400727EA0 /* AXVGeositeMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVGeositeMapViewController.xib; sourceTree = "<group>"; };
@@ -279,6 +289,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE00F6621D1101D50056462B /* IPHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BE00F6651D1102010056462B /* AXVIPHelper.h */,
+				BE00F6661D1102010056462B /* AXVIPHelper.m */,
+			);
+			name = IPHelper;
+			sourceTree = "<group>";
+		};
 		BE1DD6391CF55ED300727EA0 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +420,7 @@
 		BE66590D1CDC569300896906 /* AxionVPN */ = {
 			isa = PBXGroup;
 			children = (
+				BE00F6621D1101D50056462B /* IPHelper */,
 				BEA19CD31D02035A0049F923 /* TableSectionRepresentation */,
 				BEA19CBE1D01EC760049F923 /* Geositemanager */,
 				BE66590F1CDC56B700896906 /* Service */,
@@ -506,6 +526,7 @@
 		BE76CE541D052A1900C052DA /* SimpleTunnel */ = {
 			isa = PBXGroup;
 			children = (
+				BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */,
 				BE76CE571D052A3A00C052DA /* ClientTunnel.swift */,
 				BE76CE581D052A3A00C052DA /* Connection.swift */,
 				BE76CE591D052A3A00C052DA /* FilterUtilities.swift */,
@@ -514,6 +535,8 @@
 				BE76CE5C1D052A3A00C052DA /* util.swift */,
 				BE76CE551D052A3A00C052DA /* AxionVPNiOS-Bridging-Header.h */,
 				BE76CE561D052A3A00C052DA /* AxionPacketTunnel-Bridging-Header.h */,
+				BE121B391D07A353006EB8B3 /* IdentityTrust.h */,
+				BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */,
 			);
 			name = SimpleTunnel;
 			sourceTree = "<group>";
@@ -858,14 +881,17 @@
 				BE6659281CDC585200896906 /* AFURLResponseSerialization.m in Sources */,
 				BE6659341CDC5ADA00896906 /* AXVObject.m in Sources */,
 				BE6659151CDC56E500896906 /* AXVDataSource.m in Sources */,
+				BE121B431D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */,
 				BE1DD63D1CF55EF400727EA0 /* AXVGeositeMapViewController.m in Sources */,
 				BE80970C1CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				BE6658DB1CDC55C600896906 /* AppDelegate.m in Sources */,
 				BE7445121CEA96EA00C12D4A /* AXVVPNConfiguration.m in Sources */,
 				BE6659241CDC585200896906 /* AFHTTPSessionManager.m in Sources */,
 				BE6659311CDC5AA800896906 /* AXVGeosite.m in Sources */,
+				BE121B3B1D07A353006EB8B3 /* IdentityTrust.m in Sources */,
 				BE6659291CDC585200896906 /* AFURLSessionManager.m in Sources */,
 				BE80970F1CE4071B00FF749A /* AppDelegateViewHelper.m in Sources */,
+				BE00F6671D1102010056462B /* AXVIPHelper.m in Sources */,
 				BE6658D81CDC55C600896906 /* main.m in Sources */,
 				BEA4E18E1CE16A0A0059F01B /* AXVUser.m in Sources */,
 				BE66ACB91CEBFCC600940B67 /* AXVLoadingViewController.m in Sources */,
@@ -906,7 +932,9 @@
 			files = (
 				BE76CE641D052A3A00C052DA /* Tunnel.swift in Sources */,
 				BE76CE5E1D052A3A00C052DA /* ClientTunnel.swift in Sources */,
+				BE121B3C1D07A4CA006EB8B3 /* IdentityTrust.m in Sources */,
 				BE76CE601D052A3A00C052DA /* Connection.swift in Sources */,
+				BE121B441D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */,
 				BE76CE661D052A3A00C052DA /* util.swift in Sources */,
 				BE76CE621D052A3A00C052DA /* FilterUtilities.swift in Sources */,
 				BEFE699C1CE9761000A27814 /* PacketTunnelProvider.m in Sources */,
@@ -1040,15 +1068,22 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					AXION_VPN_IOS,
+				);
 				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AxionVPNiOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1062,15 +1097,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = AXION_VPN_IOS;
 				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ff553e0-b9cb-4e21-8d23-ec21304582b3";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AxionVPNiOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1129,11 +1167,18 @@
 				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					AXION_PACKET_TUNNEL,
+				);
 				INFOPLIST_FILE = AxionPacketTunnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS.PT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "740ed46e-4e6f-446b-ba0a-c1a2965f25a6";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AxionPacketTunnel-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1147,11 +1192,14 @@
 				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = AXION_PACKET_TUNNEL;
 				INFOPLIST_FILE = AxionPacketTunnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS.PT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "740ed46e-4e6f-446b-ba0a-c1a2965f25a6";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AxionPacketTunnel-Bridging-Header.h";
 			};

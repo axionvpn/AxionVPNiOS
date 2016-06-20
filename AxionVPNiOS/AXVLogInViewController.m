@@ -40,6 +40,15 @@
     return self;
 }
 
+-(void)openSafariWithURLString:(NSString *)urlString
+{
+    SFSafariViewController *vc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:urlString]];
+    
+    [self presentViewController:vc
+                       animated:YES
+                     completion:nil];
+}
+
 #pragma mark - IBAction
 
 -(IBAction)handleUserPressedLogInButton:(id)sender
@@ -102,11 +111,12 @@
 
 - (IBAction)handleUserPressedGetAnAccountButton:(id)sender
 {
-    SFSafariViewController *vc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:@"https://axionvpn.com/vpn"]];
-    
-    [self presentViewController:vc
-                       animated:YES
-                     completion:nil];
+    [self openSafariWithURLString:@"https://axionvpn.com/vpn"];
+}
+
+- (IBAction)handleUserPressedForgotPasswordButton:(id)sender
+{
+    [self openSafariWithURLString:@"https://axionvpn.com/lostpw"];
 }
 
 #pragma mark - UITextFieldDelegate

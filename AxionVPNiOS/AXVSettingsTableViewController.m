@@ -9,6 +9,7 @@
 #import "AXVSettingsTableViewController.h"
 #import "AXVTableSectionRepresentation.h"
 #import "AXVUserManager.h"
+#import "AXVIPHelper.h"
 
 @interface AXVSettingsTableViewController ()
 {
@@ -28,7 +29,7 @@
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Settings"
                                                         image:[UIImage imageNamed:@"ic_settings_36pt"]
                                                           tag:0];
-
+        
     }
     
     return self;
@@ -67,6 +68,19 @@
                                                                              attributes:@{NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Bold" size:13.0]}];
         [attributedString appendAttributedString:userNameString];
         [self.userNameLabel setAttributedText:attributedString];
+    }
+    
+    //IP Address label
+    {
+        NSString *string = [NSString stringWithFormat:@"Your current IP Address is \n"];
+        
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string
+                                                                                             attributes:@{NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Regular" size:13.0]}];
+        
+        NSAttributedString *ipAddressString = [[NSAttributedString alloc] initWithString:[AXVIPHelper getIPAddress]
+                                                                             attributes:@{NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Bold" size:13.0]}];
+        [attributedString appendAttributedString:ipAddressString];
+        [self.ipAddressLabel setAttributedText:attributedString];
     }
 }
 
