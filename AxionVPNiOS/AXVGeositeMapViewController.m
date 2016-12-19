@@ -9,6 +9,8 @@
 #import "AXVGeositeMapViewController.h"
 #import "AXVGeositeManager.h"
 #import <QuartzCore/QuartzCore.h>
+#import "AXVDataSource.h"
+#import "AXVUserManager.h"
 
 @interface AXVGeositeAnnotation : NSObject <MKAnnotation>
 
@@ -45,6 +47,7 @@ static NSString *const kAXVGeositeMapViewControllerPinReuseIdentifier = @"kAXVGe
 @interface AXVGeositeMapViewController () <MKMapViewDelegate>
 {
     NSArray <AXVGeosite *> *geositesArray;
+    AXVDataSource *dataSource;
 }
 @end
 
@@ -58,11 +61,15 @@ static NSString *const kAXVGeositeMapViewControllerPinReuseIdentifier = @"kAXVGe
     {
         self.title = @"Map View";
         self.navigationItem.title = @"All Locations";
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map View" image:[UIImage imageNamed:@"ic_location_on_36pt"] tag:0];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map View"
+                                                        image:[UIImage imageNamed:@"ic_location_on_36pt"]
+                                                          tag:0];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(loadedGeosites:)
                                                      name:kAXVGeositeManagerLoadedGeositesNotificationName
                                                    object:nil];
+        
+        dataSource = [[AXVDataSource alloc] init];
     }
     
     return self;
@@ -106,8 +113,13 @@ static NSString *const kAXVGeositeMapViewControllerPinReuseIdentifier = @"kAXVGe
     
     //Set up connect button
     {
-        UIButton *button =  [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, pinAnnotationView.frame.size.height)];
-        [button setTitle:@"Connect" forState:UIControlStateNormal];
+        CGRect frame = CGRectMake(0,
+                                  0,
+                                  100,
+                                  pinAnnotationView.frame.size.height);
+        UIButton *button =  [[UIButton alloc] initWithFrame:frame];
+        [button setTitle:@"Choose"
+                forState:UIControlStateNormal];
         [button setBackgroundColor:AxionGreenColor];
         button.layer.cornerRadius = 10;
         button.clipsToBounds = YES;
@@ -122,7 +134,7 @@ static NSString *const kAXVGeositeMapViewControllerPinReuseIdentifier = @"kAXVGe
 {
     AXVGeositeAnnotation *annotation = view.annotation;
     
-    NSLog(@"User chose: %@",annotation.geoSite.geoArea);
+    [self retrieveConfigurationForGeosite:annotation.geoSite];
 }
 
 @end

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "AXVGeosite.h"
 #import <MapKit/MapKit.h>
+#import "AXVConfigurationRetrievalViewController.h"
 
-@interface AXVGeositeMapViewController : UIViewController
+@interface AXVGeositeMapViewController : AXVConfigurationRetrievalViewController
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 

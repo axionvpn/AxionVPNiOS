@@ -47,4 +47,9 @@
     [self.view removeFromSuperview];
 }
 
+-(void)setTopLabelText:(NSString *)topLabelText
+{
+    self.topLabel.text = topLabelText;
+}
+
 @end

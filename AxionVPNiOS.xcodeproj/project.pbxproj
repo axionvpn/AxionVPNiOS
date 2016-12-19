@@ -8,14 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BE00F6671D1102010056462B /* AXVIPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE00F6661D1102010056462B /* AXVIPHelper.m */; };
-		BE121B3B1D07A353006EB8B3 /* IdentityTrust.m in Sources */ = {isa = PBXBuildFile; fileRef = BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */; };
-		BE121B3C1D07A4CA006EB8B3 /* IdentityTrust.m in Sources */ = {isa = PBXBuildFile; fileRef = BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */; };
-		BE121B431D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */; };
-		BE121B441D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */; };
 		BE1DD63D1CF55EF400727EA0 /* AXVGeositeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1DD63B1CF55EF400727EA0 /* AXVGeositeMapViewController.m */; };
 		BE1DD63E1CF55EF400727EA0 /* AXVGeositeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1DD63C1CF55EF400727EA0 /* AXVGeositeMapViewController.xib */; };
 		BE1DD6401CF5654F00727EA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1DD63F1CF5654F00727EA0 /* MapKit.framework */; };
 		BE1F483A1D02496D000FC62E /* AXVLogInViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1F48391D02496D000FC62E /* AXVLogInViewController~ipad.xib */; };
+		BE2E972E1D9226EA009FAAA2 /* AXVConfigurationRetrievalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E972D1D9226EA009FAAA2 /* AXVConfigurationRetrievalViewController.m */; };
 		BE6658D81CDC55C600896906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658D71CDC55C600896906 /* main.m */; };
 		BE6658DB1CDC55C600896906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6658DA1CDC55C600896906 /* AppDelegate.m */; };
 		BE6658E31CDC55C600896906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6658E21CDC55C600896906 /* Assets.xcassets */; };
@@ -36,23 +33,11 @@
 		BE6659341CDC5ADA00896906 /* AXVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6659331CDC5ADA00896906 /* AXVObject.m */; };
 		BE66ACB91CEBFCC600940B67 /* AXVLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66ACB71CEBFCC600940B67 /* AXVLoadingViewController.m */; };
 		BE66ACBA1CEBFCC600940B67 /* AXVLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE66ACB81CEBFCC600940B67 /* AXVLoadingViewController.xib */; };
-		BE66ACBC1CEC0F7900940B67 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */; };
-		BE66ACBD1CEC11FA00940B67 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */; };
 		BE6A8C661CE2E6E300CFDD9A /* AXVLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6A8C641CE2E6E300CFDD9A /* AXVLogInViewController.m */; };
 		BE6A8C671CE2E6E300CFDD9A /* AXVLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A8C651CE2E6E300CFDD9A /* AXVLogInViewController.xib */; };
 		BE70DA3C1CE53D020036A324 /* UIViewController+AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */; };
 		BE70DA411CE540A80036A324 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70DA401CE540A80036A324 /* SafariServices.framework */; };
 		BE7445121CEA96EA00C12D4A /* AXVVPNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7445111CEA96EA00C12D4A /* AXVVPNConfiguration.m */; };
-		BE76CE5D1D052A3A00C052DA /* ClientTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE571D052A3A00C052DA /* ClientTunnel.swift */; };
-		BE76CE5E1D052A3A00C052DA /* ClientTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE571D052A3A00C052DA /* ClientTunnel.swift */; };
-		BE76CE5F1D052A3A00C052DA /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE581D052A3A00C052DA /* Connection.swift */; };
-		BE76CE601D052A3A00C052DA /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE581D052A3A00C052DA /* Connection.swift */; };
-		BE76CE611D052A3A00C052DA /* FilterUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE591D052A3A00C052DA /* FilterUtilities.swift */; };
-		BE76CE621D052A3A00C052DA /* FilterUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE591D052A3A00C052DA /* FilterUtilities.swift */; };
-		BE76CE631D052A3A00C052DA /* Tunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5B1D052A3A00C052DA /* Tunnel.swift */; };
-		BE76CE641D052A3A00C052DA /* Tunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5B1D052A3A00C052DA /* Tunnel.swift */; };
-		BE76CE651D052A3A00C052DA /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5C1D052A3A00C052DA /* util.swift */; };
-		BE76CE661D052A3A00C052DA /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE76CE5C1D052A3A00C052DA /* util.swift */; };
 		BE7DBDED1D04F2D500961FD6 /* UIViewController+LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7DBDEC1D04F2D500961FD6 /* UIViewController+LoginController.m */; };
 		BE8096FF1CE4001100FF749A /* axionlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8096FE1CE4001100FF749A /* axionlogo.png */; };
 		BE8097091CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8097021CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m */; };
@@ -87,8 +72,6 @@
 		BEA19CD21D02012E0049F923 /* AXVSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA19CD01D02012E0049F923 /* AXVSettingsTableViewController.xib */; };
 		BEA19CD61D0203DE0049F923 /* AXVTableSectionRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA19CD51D0203DE0049F923 /* AXVTableSectionRepresentation.m */; };
 		BEA4E18E1CE16A0A0059F01B /* AXVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA4E18D1CE16A0A0059F01B /* AXVUser.m */; };
-		BEFE699C1CE9761000A27814 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE699B1CE9761000A27814 /* PacketTunnelProvider.m */; };
-		BEFE69A11CE9761000A27814 /* AxionPacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,13 +89,6 @@
 			remoteGlobalIDString = BE6658D21CDC55C600896906;
 			remoteInfo = AxionVPNiOS;
 		};
-		BEFE699E1CE9761000A27814 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE6658CB1CDC55C600896906 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEFE69951CE9761000A27814;
-			remoteInfo = AxionPacketTunnel;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,7 +98,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				BEFE69A11CE9761000A27814 /* AxionPacketTunnel.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,14 +107,13 @@
 /* Begin PBXFileReference section */
 		BE00F6651D1102010056462B /* AXVIPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVIPHelper.h; path = ../AxionVPNFramework/AXVIPHelper.h; sourceTree = "<group>"; };
 		BE00F6661D1102010056462B /* AXVIPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVIPHelper.m; path = ../AxionVPNFramework/AXVIPHelper.m; sourceTree = "<group>"; };
-		BE121B391D07A353006EB8B3 /* IdentityTrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdentityTrust.h; path = ../AxionVPNFramework/Apple/SimpleTunnel/IdentityTrust.h; sourceTree = "<group>"; };
-		BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IdentityTrust.m; path = ../AxionVPNFramework/Apple/SimpleTunnel/IdentityTrust.m; sourceTree = "<group>"; };
-		BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientTunnelConnection.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/ClientTunnelConnection.swift; sourceTree = "<group>"; };
 		BE1DD63A1CF55EF400727EA0 /* AXVGeositeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVGeositeMapViewController.h; sourceTree = "<group>"; };
 		BE1DD63B1CF55EF400727EA0 /* AXVGeositeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVGeositeMapViewController.m; sourceTree = "<group>"; };
 		BE1DD63C1CF55EF400727EA0 /* AXVGeositeMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVGeositeMapViewController.xib; sourceTree = "<group>"; };
 		BE1DD63F1CF5654F00727EA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BE1F48391D02496D000FC62E /* AXVLogInViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AXVLogInViewController~ipad.xib"; sourceTree = "<group>"; };
+		BE2E972C1D9226EA009FAAA2 /* AXVConfigurationRetrievalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVConfigurationRetrievalViewController.h; sourceTree = "<group>"; };
+		BE2E972D1D9226EA009FAAA2 /* AXVConfigurationRetrievalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVConfigurationRetrievalViewController.m; sourceTree = "<group>"; };
 		BE6658D31CDC55C600896906 /* AxionVPNiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxionVPNiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6658D71CDC55C600896906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE6658D91CDC55C600896906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -180,8 +154,6 @@
 		BE66ACB61CEBFCC600940B67 /* AXVLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVLoadingViewController.h; sourceTree = "<group>"; };
 		BE66ACB71CEBFCC600940B67 /* AXVLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVLoadingViewController.m; sourceTree = "<group>"; };
 		BE66ACB81CEBFCC600940B67 /* AXVLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVLoadingViewController.xib; sourceTree = "<group>"; };
-		BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		BE66ACBE1CEC11FB00940B67 /* AxionVPNiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AxionVPNiOS.entitlements; sourceTree = "<group>"; };
 		BE6A8C631CE2E6E300CFDD9A /* AXVLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXVLogInViewController.h; sourceTree = "<group>"; };
 		BE6A8C641CE2E6E300CFDD9A /* AXVLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXVLogInViewController.m; sourceTree = "<group>"; };
 		BE6A8C651CE2E6E300CFDD9A /* AXVLogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXVLogInViewController.xib; sourceTree = "<group>"; };
@@ -191,14 +163,6 @@
 		BE70DA401CE540A80036A324 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		BE7445101CEA96EA00C12D4A /* AXVVPNConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVVPNConfiguration.h; path = ../AxionVPNFramework/AXVVPNConfiguration.h; sourceTree = "<group>"; };
 		BE7445111CEA96EA00C12D4A /* AXVVPNConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVVPNConfiguration.m; path = ../AxionVPNFramework/AXVVPNConfiguration.m; sourceTree = "<group>"; };
-		BE76CE551D052A3A00C052DA /* AxionVPNiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AxionVPNiOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		BE76CE561D052A3A00C052DA /* AxionPacketTunnel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AxionPacketTunnel-Bridging-Header.h"; sourceTree = "<group>"; };
-		BE76CE571D052A3A00C052DA /* ClientTunnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientTunnel.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/ClientTunnel.swift; sourceTree = "<group>"; };
-		BE76CE581D052A3A00C052DA /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/Connection.swift; sourceTree = "<group>"; };
-		BE76CE591D052A3A00C052DA /* FilterUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterUtilities.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/FilterUtilities.swift; sourceTree = "<group>"; };
-		BE76CE5A1D052A3A00C052DA /* SimpleTunnelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleTunnelServices.h; path = ../AxionVPNFramework/Apple/SimpleTunnel/SimpleTunnelServices.h; sourceTree = "<group>"; };
-		BE76CE5B1D052A3A00C052DA /* Tunnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tunnel.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/Tunnel.swift; sourceTree = "<group>"; };
-		BE76CE5C1D052A3A00C052DA /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = util.swift; path = ../AxionVPNFramework/Apple/SimpleTunnel/util.swift; sourceTree = "<group>"; };
 		BE7DBDEB1D04F2D500961FD6 /* UIViewController+LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LoginController.h"; sourceTree = "<group>"; };
 		BE7DBDEC1D04F2D500961FD6 /* UIViewController+LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LoginController.m"; sourceTree = "<group>"; };
 		BE8096FE1CE4001100FF749A /* axionlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axionlogo.png; sourceTree = "<group>"; };
@@ -245,11 +209,6 @@
 		BEA19CD51D0203DE0049F923 /* AXVTableSectionRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVTableSectionRepresentation.m; path = ../AxionVPNFramework/TableSectionRepresentation/AXVTableSectionRepresentation.m; sourceTree = "<group>"; };
 		BEA4E18C1CE16A0A0059F01B /* AXVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXVUser.h; path = ../AxionVPNFramework/AXVUser.h; sourceTree = "<group>"; };
 		BEA4E18D1CE16A0A0059F01B /* AXVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXVUser.m; path = ../AxionVPNFramework/AXVUser.m; sourceTree = "<group>"; };
-		BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AxionPacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEFE69991CE9761000A27814 /* AxionPacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AxionPacketTunnel.entitlements; sourceTree = "<group>"; };
-		BEFE699A1CE9761000A27814 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
-		BEFE699B1CE9761000A27814 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
-		BEFE699D1CE9761000A27814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,7 +219,6 @@
 				BEA19CCD1D02005C0049F923 /* QuartzCore.framework in Frameworks */,
 				BE1DD6401CF5654F00727EA0 /* MapKit.framework in Frameworks */,
 				BE70DA411CE540A80036A324 /* SafariServices.framework in Frameworks */,
-				BE66ACBD1CEC11FA00940B67 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,14 +233,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEFE69931CE9761000A27814 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE66ACBC1CEC0F7900940B67 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +264,6 @@
 				BE6658D51CDC55C600896906 /* AxionVPNiOS */,
 				BE6658EF1CDC55C600896906 /* AxionVPNiOSTests */,
 				BE6658FA1CDC55C600896906 /* AxionVPNiOSUITests */,
-				BEFE69971CE9761000A27814 /* AxionPacketTunnel */,
 				BE6658D41CDC55C600896906 /* Products */,
 				BE66590A1CDC568600896906 /* Frameworks */,
 			);
@@ -326,7 +275,6 @@
 				BE6658D31CDC55C600896906 /* AxionVPNiOS.app */,
 				BE6658EC1CDC55C600896906 /* AxionVPNiOSTests.xctest */,
 				BE6658F71CDC55C600896906 /* AxionVPNiOSUITests.xctest */,
-				BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,7 +294,6 @@
 		BE6658D61CDC55C600896906 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE66ACBE1CEC11FB00940B67 /* AxionVPNiOS.entitlements */,
 				BE6658E21CDC55C600896906 /* Assets.xcassets */,
 				BE6658E41CDC55C600896906 /* LaunchScreen.storyboard */,
 				BE6658E71CDC55C600896906 /* Info.plist */,
@@ -398,10 +345,8 @@
 		BE66590B1CDC568A00896906 /* Apple */ = {
 			isa = PBXGroup;
 			children = (
-				BE76CE541D052A1900C052DA /* SimpleTunnel */,
 				BEA19CCC1D02005C0049F923 /* QuartzCore.framework */,
 				BE1DD63F1CF5654F00727EA0 /* MapKit.framework */,
-				BE66ACBB1CEC0F7900940B67 /* NetworkExtension.framework */,
 				BE70DA401CE540A80036A324 /* SafariServices.framework */,
 			);
 			name = Apple;
@@ -420,10 +365,10 @@
 		BE66590D1CDC569300896906 /* AxionVPN */ = {
 			isa = PBXGroup;
 			children = (
-				BE00F6621D1101D50056462B /* IPHelper */,
-				BEA19CD31D02035A0049F923 /* TableSectionRepresentation */,
 				BEA19CBE1D01EC760049F923 /* Geositemanager */,
+				BE00F6621D1101D50056462B /* IPHelper */,
 				BE66590F1CDC56B700896906 /* Service */,
+				BEA19CD31D02035A0049F923 /* TableSectionRepresentation */,
 			);
 			name = AxionVPN;
 			sourceTree = "<group>";
@@ -431,6 +376,7 @@
 		BE66590E1CDC56A900896906 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BEA77D051D921B07002A3103 /* Configuration Retrieval */,
 				BE66ACB51CEBFCAE00940B67 /* Loading */,
 				BE6A8C621CE2E6CE00CFDD9A /* Login */,
 				BE1DD6391CF55ED300727EA0 /* Map */,
@@ -515,30 +461,9 @@
 		BE70DA391CE53CEC0036A324 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				BE70DA3A1CE53D020036A324 /* UIViewController+AlertView.h */,
-				BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */,
-				BE7DBDEB1D04F2D500961FD6 /* UIViewController+LoginController.h */,
-				BE7DBDEC1D04F2D500961FD6 /* UIViewController+LoginController.m */,
+				BEA77D001D921871002A3103 /* UIViewController+ */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		BE76CE541D052A1900C052DA /* SimpleTunnel */ = {
-			isa = PBXGroup;
-			children = (
-				BE121B421D07AE3D006EB8B3 /* ClientTunnelConnection.swift */,
-				BE76CE571D052A3A00C052DA /* ClientTunnel.swift */,
-				BE76CE581D052A3A00C052DA /* Connection.swift */,
-				BE76CE591D052A3A00C052DA /* FilterUtilities.swift */,
-				BE76CE5A1D052A3A00C052DA /* SimpleTunnelServices.h */,
-				BE76CE5B1D052A3A00C052DA /* Tunnel.swift */,
-				BE76CE5C1D052A3A00C052DA /* util.swift */,
-				BE76CE551D052A3A00C052DA /* AxionVPNiOS-Bridging-Header.h */,
-				BE76CE561D052A3A00C052DA /* AxionPacketTunnel-Bridging-Header.h */,
-				BE121B391D07A353006EB8B3 /* IdentityTrust.h */,
-				BE121B3A1D07A353006EB8B3 /* IdentityTrust.m */,
-			);
-			name = SimpleTunnel;
 			sourceTree = "<group>";
 		};
 		BE8096FD1CE3FFED00FF749A /* Images */ = {
@@ -647,23 +572,24 @@
 			name = TableSectionRepresentation;
 			sourceTree = "<group>";
 		};
-		BEFE69971CE9761000A27814 /* AxionPacketTunnel */ = {
+		BEA77D001D921871002A3103 /* UIViewController+ */ = {
 			isa = PBXGroup;
 			children = (
-				BEFE699A1CE9761000A27814 /* PacketTunnelProvider.h */,
-				BEFE699B1CE9761000A27814 /* PacketTunnelProvider.m */,
-				BEFE699D1CE9761000A27814 /* Info.plist */,
-				BEFE69981CE9761000A27814 /* Supporting Files */,
+				BE70DA3A1CE53D020036A324 /* UIViewController+AlertView.h */,
+				BE70DA3B1CE53D020036A324 /* UIViewController+AlertView.m */,
+				BE7DBDEB1D04F2D500961FD6 /* UIViewController+LoginController.h */,
+				BE7DBDEC1D04F2D500961FD6 /* UIViewController+LoginController.m */,
 			);
-			path = AxionPacketTunnel;
+			name = "UIViewController+";
 			sourceTree = "<group>";
 		};
-		BEFE69981CE9761000A27814 /* Supporting Files */ = {
+		BEA77D051D921B07002A3103 /* Configuration Retrieval */ = {
 			isa = PBXGroup;
 			children = (
-				BEFE69991CE9761000A27814 /* AxionPacketTunnel.entitlements */,
+				BE2E972C1D9226EA009FAAA2 /* AXVConfigurationRetrievalViewController.h */,
+				BE2E972D1D9226EA009FAAA2 /* AXVConfigurationRetrievalViewController.m */,
 			);
-			name = "Supporting Files";
+			name = "Configuration Retrieval";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,7 +607,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BEFE699F1CE9761000A27814 /* PBXTargetDependency */,
 			);
 			name = AxionVPNiOS;
 			productName = AxionVPNiOS;
@@ -724,41 +649,26 @@
 			productReference = BE6658F71CDC55C600896906 /* AxionVPNiOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		BEFE69951CE9761000A27814 /* AxionPacketTunnel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEFE69A41CE9761000A27814 /* Build configuration list for PBXNativeTarget "AxionPacketTunnel" */;
-			buildPhases = (
-				BEFE69921CE9761000A27814 /* Sources */,
-				BEFE69931CE9761000A27814 /* Frameworks */,
-				BEFE69941CE9761000A27814 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AxionPacketTunnel;
-			productName = AxionPacketTunnel;
-			productReference = BEFE69961CE9761000A27814 /* AxionPacketTunnel.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BE6658CB1CDC55C600896906 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = AxionVPN;
 				TargetAttributes = {
 					BE6658D21CDC55C600896906 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 3P4L4LZ5DK;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.VPNLite = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -769,18 +679,6 @@
 					BE6658F61CDC55C600896906 = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = BE6658D21CDC55C600896906;
-					};
-					BEFE69951CE9761000A27814 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 3P4L4LZ5DK;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.VPNLite = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
@@ -800,7 +698,6 @@
 				BE6658D21CDC55C600896906 /* AxionVPNiOS */,
 				BE6658EB1CDC55C600896906 /* AxionVPNiOSTests */,
 				BE6658F61CDC55C600896906 /* AxionVPNiOSUITests */,
-				BEFE69951CE9761000A27814 /* AxionPacketTunnel */,
 			);
 		};
 /* End PBXProject section */
@@ -855,13 +752,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEFE69941CE9761000A27814 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -872,7 +762,6 @@
 				BEA19CD11D02012E0049F923 /* AXVSettingsTableViewController.m in Sources */,
 				BE66592D1CDC593B00896906 /* AXVServerListViewController.m in Sources */,
 				BE6A8C661CE2E6E300CFDD9A /* AXVLogInViewController.m in Sources */,
-				BE76CE611D052A3A00C052DA /* FilterUtilities.swift in Sources */,
 				BEA19CD61D0203DE0049F923 /* AXVTableSectionRepresentation.m in Sources */,
 				BE9D8BF91CF6B53000065AF2 /* AXVGeositeTableViewCell.m in Sources */,
 				BE8097091CE401CC00FF749A /* TPKeyboardAvoidingCollectionView.m in Sources */,
@@ -881,14 +770,12 @@
 				BE6659281CDC585200896906 /* AFURLResponseSerialization.m in Sources */,
 				BE6659341CDC5ADA00896906 /* AXVObject.m in Sources */,
 				BE6659151CDC56E500896906 /* AXVDataSource.m in Sources */,
-				BE121B431D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */,
 				BE1DD63D1CF55EF400727EA0 /* AXVGeositeMapViewController.m in Sources */,
 				BE80970C1CE401CC00FF749A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				BE6658DB1CDC55C600896906 /* AppDelegate.m in Sources */,
 				BE7445121CEA96EA00C12D4A /* AXVVPNConfiguration.m in Sources */,
 				BE6659241CDC585200896906 /* AFHTTPSessionManager.m in Sources */,
 				BE6659311CDC5AA800896906 /* AXVGeosite.m in Sources */,
-				BE121B3B1D07A353006EB8B3 /* IdentityTrust.m in Sources */,
 				BE6659291CDC585200896906 /* AFURLSessionManager.m in Sources */,
 				BE80970F1CE4071B00FF749A /* AppDelegateViewHelper.m in Sources */,
 				BE00F6671D1102010056462B /* AXVIPHelper.m in Sources */,
@@ -896,15 +783,12 @@
 				BEA4E18E1CE16A0A0059F01B /* AXVUser.m in Sources */,
 				BE66ACB91CEBFCC600940B67 /* AXVLoadingViewController.m in Sources */,
 				BE7DBDED1D04F2D500961FD6 /* UIViewController+LoginController.m in Sources */,
+				BE2E972E1D9226EA009FAAA2 /* AXVConfigurationRetrievalViewController.m in Sources */,
 				BE80970A1CE401CC00FF749A /* TPKeyboardAvoidingScrollView.m in Sources */,
 				BE6659251CDC585200896906 /* AFNetworkReachabilityManager.m in Sources */,
 				BEA19CC11D01EC8C0049F923 /* AXVGeositeManager.m in Sources */,
-				BE76CE631D052A3A00C052DA /* Tunnel.swift in Sources */,
-				BE76CE651D052A3A00C052DA /* util.swift in Sources */,
 				BE6659121CDC56D600896906 /* AXVUserManager.m in Sources */,
-				BE76CE5F1D052A3A00C052DA /* Connection.swift in Sources */,
 				BE6659271CDC585200896906 /* AFURLRequestSerialization.m in Sources */,
-				BE76CE5D1D052A3A00C052DA /* ClientTunnel.swift in Sources */,
 				BE70DA3C1CE53D020036A324 /* UIViewController+AlertView.m in Sources */,
 				BE8097131CE4098200FF749A /* STKeychain.m in Sources */,
 			);
@@ -926,21 +810,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEFE69921CE9761000A27814 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE76CE641D052A3A00C052DA /* Tunnel.swift in Sources */,
-				BE76CE5E1D052A3A00C052DA /* ClientTunnel.swift in Sources */,
-				BE121B3C1D07A4CA006EB8B3 /* IdentityTrust.m in Sources */,
-				BE76CE601D052A3A00C052DA /* Connection.swift in Sources */,
-				BE121B441D07AE3D006EB8B3 /* ClientTunnelConnection.swift in Sources */,
-				BE76CE661D052A3A00C052DA /* util.swift in Sources */,
-				BE76CE621D052A3A00C052DA /* FilterUtilities.swift in Sources */,
-				BEFE699C1CE9761000A27814 /* PacketTunnelProvider.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -953,11 +822,6 @@
 			isa = PBXTargetDependency;
 			target = BE6658D21CDC55C600896906 /* AxionVPNiOS */;
 			targetProxy = BE6658F81CDC55C600896906 /* PBXContainerItemProxy */;
-		};
-		BEFE699F1CE9761000A27814 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BEFE69951CE9761000A27814 /* AxionPacketTunnel */;
-			targetProxy = BEFE699E1CE9761000A27814 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -987,8 +851,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Margret Kroeze (4W3MNEDGR4)";
@@ -1034,8 +900,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Margret Kroeze (4W3MNEDGR4)";
@@ -1064,13 +932,15 @@
 		BE6659011CDC55C600896906 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = 3P4L4LZ5DK;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1078,39 +948,56 @@
 					"$(inherited)",
 					AXION_VPN_IOS,
 				);
+				HEADER_SEARCH_PATHS = (
+					"../AXVFramework/**",
+					"$(SRCROOT)/AxionVPNiOS/**",
+				);
 				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "AxionVPNiOS-Bridging-Header.h";
+				PROVISIONING_PROFILE = "4805110a-00cb-4bf0-8135-bea12e0a5099";
+				PROVISIONING_PROFILE_SPECIFIER = "AxionVPNiOS Development";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AxionVPNiOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BE6659021CDC55C600896906 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AxionVPNiOS/AxionVPNiOS.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Global VPN B.V (3P4L4LZ5DK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Global VPN B.V (3P4L4LZ5DK)";
 				DEFINES_MODULE = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = 3P4L4LZ5DK;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AxionVPNiOS/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = AXION_VPN_IOS;
+				HEADER_SEARCH_PATHS = (
+					"../AXVFramework/**",
+					"$(SRCROOT)/AxionVPNiOS/**",
+				);
 				INFOPLIST_FILE = AxionVPNiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "AxionVPNiOS-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "5db8d055-1cbd-4d59-bfee-c262592a6e6f";
+				PROVISIONING_PROFILE_SPECIFIER = "Axion iOS Ad Hoc";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AxionVPNiOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1160,51 +1047,6 @@
 			};
 			name = Release;
 		};
-		BEFE69A21CE9761000A27814 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEFINES_MODULE = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					AXION_PACKET_TUNNEL,
-				);
-				INFOPLIST_FILE = AxionPacketTunnel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS.PT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AxionPacketTunnel-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		BEFE69A31CE9761000A27814 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = AxionPacketTunnel/AxionPacketTunnel.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEFINES_MODULE = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = AXION_PACKET_TUNNEL;
-				INFOPLIST_FILE = AxionPacketTunnel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axionvpn.AxionVPNiOS.PT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "AxionPacketTunnel-Bridging-Header.h";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1240,15 +1082,6 @@
 			buildConfigurations = (
 				BE6659071CDC55C600896906 /* Debug */,
 				BE6659081CDC55C600896906 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BEFE69A41CE9761000A27814 /* Build configuration list for PBXNativeTarget "AxionPacketTunnel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BEFE69A21CE9761000A27814 /* Debug */,
-				BEFE69A31CE9761000A27814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

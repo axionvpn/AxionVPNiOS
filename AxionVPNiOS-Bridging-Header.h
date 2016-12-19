@@ -1,6 +1,9 @@
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
+//  AxionVPNiOS-Bridging-Header.h
+//  AxionVPNiOS
+//
+//  Created by Will Chilcutt on 9/20/16.
+//  Copyright © 2016 AxionVPN. All rights reserved.
 //
 
-#import "IdentityTrust.h"
-#import "SimpleTunnelServices.h"
+#import "AXVDataSource.h"

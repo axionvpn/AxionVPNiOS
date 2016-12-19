@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AXVConfigurationRetrievalViewController.h"
 
-@interface AXVServerListViewController : UIViewController
+@interface AXVServerListViewController : AXVConfigurationRetrievalViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

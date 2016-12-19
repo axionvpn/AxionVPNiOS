@@ -12,8 +12,11 @@
 
 @property (weak, nonatomic) IBOutlet UIView *smallBlackSquareView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
 
 -(void)addToView:(UIView *)superView;
 -(void)remove;
+-(void)setTopLabelText:(NSString *)topLabelText;
 
 @end

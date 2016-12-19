@@ -10,9 +10,7 @@
 #import "AXVUserManager.h"
 #import "AXVGeositeManager.h"
 #import "AXVLogInViewController.h"
-#import <NetworkExtension/NetworkExtension.h>
 #import "AXVLoadingViewController.h"
-#import "PacketTunnelProvider.h"
 #import "AXVGeositeMapViewController.h"
 #import "AXVGeositeTableViewCell.h"
 #import "AXVSettingsTableViewController.h"
@@ -30,8 +28,6 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
     AXVGeositeMapViewController *mapVC;
     
     AXVDataSource *dataSource;
-    
-    NETunnelProviderManager *tunnelManager;
 }
 
 @end
@@ -49,9 +45,7 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"List View"
                                                         image:[UIImage imageNamed:@"ic_location_city_36pt"]
                                                           tag:0];
-        
-        loadingVC = [[AXVLoadingViewController alloc] init];
-        
+                
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(handleGeositesLoaded:)
                                                      name:kAXVGeositeManagerLoadedGeositesNotificationName
@@ -124,6 +118,7 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
 -(void)getGeoSites
 {
     [loadingVC addToView:self.navigationController.view];
+    [loadingVC setTopLabelText:@"Loading.."];
 
     [[AXVGeositeManager sharedInstance] loadGeosites];
 }
@@ -189,109 +184,7 @@ static NSString *const kAXVServerListViewControllerCellIdentifier = @"kAXVServer
 {
     AXVGeosite *geosite = [geositesArray objectAtIndex:indexPath.row];
     
-    [loadingVC addToView:self.navigationController.view];
-    
-    dataSource = [[AXVDataSource alloc] init];
-    
-    [dataSource getVPNConfigurationForUser:[[AXVUserManager sharedInstance] currentUser]
-                                andGeosite:geosite
-                       withCompletionBlock:^(NSError *error, AXVVPNConfiguration *configuration)
-    {
-        [loadingVC remove];
-        
-        if (error != nil)
-        {
-            NSLog(@"Error getting vpn config: %@",error);
-            [self showErrorAlertWithTitle:@"Error"
-                               andMessage:[NSString stringWithFormat:@"Error connecting to VPN: %@",error.localizedDescription]];
-        }
-        else
-        {
-            [NETunnelProviderManager loadAllFromPreferencesWithCompletionHandler:^(NSArray<NETunnelProviderManager *> * _Nullable managers, NSError * _Nullable error) {
-                
-                if (error != nil)
-                {
-                    NSLog(@"error = %@",error);
-                }
-                else
-                {
-                    tunnelManager = managers.firstObject;
-                    
-                    if (tunnelManager == nil)
-                    {
-                        tunnelManager = [[NETunnelProviderManager alloc] init];
-                        tunnelManager.localizedDescription = geosite.geoArea;
-                        
-                        //Provider protocol
-                        {
-                            NETunnelProviderProtocol *providerProtocol = [[NETunnelProviderProtocol alloc] init];
-                            providerProtocol.serverAddress = configuration.vpnServer;
-                            providerProtocol.providerConfiguration = @{@"something":@"something"};
-                            providerProtocol.providerBundleIdentifier = @"com.axionvpn.AxionVPNiOS.PT";
-                            
-                            tunnelManager.protocolConfiguration = providerProtocol;
-                        }
-                        
-                        [tunnelManager setEnabled:YES];
-                        
-                        [tunnelManager saveToPreferencesWithCompletionHandler:^(NSError * _Nullable error)
-                        {
-                            if (error != nil)
-                            {
-                                NSLog(@"Error saving to prefs: %@",error);
-                            }
-                            else
-                            {
-                                NETunnelProviderSession *session = (NETunnelProviderSession *)tunnelManager.connection;
-                                
-                                NSError *providerError = nil;
-                                
-                                [session sendProviderMessage:[@"Hello provider" dataUsingEncoding:NSUTF8StringEncoding]
-                                                 returnError:&providerError
-                                             responseHandler:^(NSData * _Nullable responseData)
-                                 {
-                                     NSLog(@"Response: %@",[[NSString alloc] initWithData:responseData
-                                                                                 encoding:NSUTF8StringEncoding]);
-                                 }];
-                                
-                                if (providerError != nil)
-                                {
-                                    switch (providerError.code)
-                                    {
-                                        case NEVPNErrorConfigurationInvalid:
-                                            NSLog(@"VPN config invalid");
-                                            break;
-                                        case NEVPNErrorConfigurationDisabled:
-                                            NSLog(@"VPN config disabled");
-                                            break;
-                                        case NEVPNErrorConnectionFailed:
-                                            NSLog(@"VPN connection failed");
-                                            break;
-                                        case NEVPNErrorConfigurationStale:
-                                            NSLog(@"VPN config stale");
-                                            break;
-                                        case NEVPNErrorConfigurationReadWriteFailed:
-                                            NSLog(@"VPN config read/write failed");
-                                            break;
-                                        case NEVPNErrorConfigurationUnknown:
-                                            NSLog(@"VPN config unknown");
-                                            break;
-                                            
-                                        default:
-                                            NSLog(@"Default???");
-                                            break;
-                                    }
-                                    
-                                    NSLog(@"%@",providerError);
-                                }
-   
-                            }
-                        }];
-                    }
-                }
-            }];
-        }
-    }];
+    [self retrieveConfigurationForGeosite:geosite];
 }
 
 @end

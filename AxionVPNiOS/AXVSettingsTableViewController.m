@@ -14,6 +14,7 @@
 @interface AXVSettingsTableViewController ()
 {
     NSMutableArray  <AXVTableSectionRepresentation *> *tableSectionRepsArray;
+    AXVIPHelper *ipHelper;
 }
 @end
 
@@ -29,7 +30,7 @@
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Settings"
                                                         image:[UIImage imageNamed:@"ic_settings_36pt"]
                                                           tag:0];
-        
+        ipHelper = [[AXVIPHelper alloc] init];
     }
     
     return self;
@@ -72,15 +73,28 @@
     
     //IP Address label
     {
-        NSString *string = [NSString stringWithFormat:@"Your current IP Address is \n"];
-        
-        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string
-                                                                                             attributes:@{NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Regular" size:13.0]}];
-        
-        NSAttributedString *ipAddressString = [[NSAttributedString alloc] initWithString:[AXVIPHelper getIPAddress]
-                                                                             attributes:@{NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Bold" size:13.0]}];
-        [attributedString appendAttributedString:ipAddressString];
-        [self.ipAddressLabel setAttributedText:attributedString];
+        [ipHelper getIPAddressWithCompletionBlock:^(NSError *error, NSString *ipAddress) {
+           
+            if (error != nil)
+            {
+                NSLog(@"Error getting ip: %@",error);
+            }
+            else
+            {
+                dispatch_async(dispatch_get_main_queue(), ^
+                {
+                    NSString *string = [NSString stringWithFormat:@"Your current IP Address is \n"];
+                    
+                    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string
+                                                                                                         attributes:@{NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Regular" size:13.0]}];
+                    
+                    NSAttributedString *ipAddressString = [[NSAttributedString alloc] initWithString:ipAddress
+                                                                                          attributes:@{NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Bold" size:13.0]}];
+                    [attributedString appendAttributedString:ipAddressString];
+                    [self.ipAddressLabel setAttributedText:attributedString];
+                });
+            }
+        }];
     }
 }
 
@@ -97,6 +111,7 @@
                                                          handler:^(UIAlertAction * _Nonnull action)
                                    {
                                        [[AXVUserManager sharedInstance] logOut];
+                                       
                                        [self showLogInScreen];
                                    }];
     
